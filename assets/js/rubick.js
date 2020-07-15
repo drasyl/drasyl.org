@@ -71,15 +71,7 @@ $(document).ready(function(){
         
         rubik.checkResponsiveImage();
     } 
-    
-    setTimeout(function(){
-         $('.loading').css('opacity','0');
-         setTimeout(function(){
-             $('.loading').addClass('hide');
-         }, 500);
-     }, 3000);
-        
-    
+            
     if($('#contactUsMap').length != 0){
         rubik.initGoogleMaps();   
     }
