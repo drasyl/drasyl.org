@@ -1,0 +1,29 @@
+@import 'variables';
+
+@import 'general';
+@import 'header';
+@import 'nav';
+@import 'hero';
+@import 'sections';
+@import 'footer';
+@import 'fonts';
+
+html {
+  background: #373737;
+}
+
+#particles-js canvas {
+  background-color: darken($primary, 11);
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  min-height: 700px;
+  z-index: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
