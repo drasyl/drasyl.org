@@ -366,7 +366,7 @@ body > .navbar-collapse a {
   margin: 5px 0px;
   padding: 20px 15px;
   font-size: 20px;
-  font-family: "Slim-Joe";
+  font-family: 'Nunito', "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   letter-spacing: 0;
 }
 .navbar .navbar-nav > li > a {
@@ -408,8 +408,7 @@ body > .navbar-collapse a {
 }
 
 .navbar-default {
-  background-color: white;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #005E54;
 }
 .navbar-default .navbar-nav > li > a:not(.btn) {
   color: #343434;
@@ -1123,6 +1122,10 @@ body > .navbar-collapse.collapse {
   -webkit-animation-fill-mode: forwards;
   -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
+}
+.navbar-default .navbar-toggle .icon-bar,
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #fff !important;
 }
 @keyframes topbar-x {
   0% {
@@ -2407,11 +2410,10 @@ a.carousel-control span.fa {
   transform: translateY(-50%);
 }
 .section-header h1 {
-  letter-spacing: 0.1em;
-  font-weight: 100;
+  letter-spacing: -2px;
+  font-weight: 400;
   font-size: 6em;
-  font-family: "Slim-Joe";
-  text-transform: uppercase;
+  font-family: 'Nunito', "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   text-shadow: -2px 2px 0px rgba(0, 0, 0, 0.3), -2px 4px 2px rgba(0, 0, 0, 0.1);
 }
 .section-header h5 {
@@ -3402,7 +3404,7 @@ body.noscroll {
 .section-numbers-1 .number, .section-numbers-2 .number, .section-numbers-3 .number {
   font-size: 40px;
   color: #c5a47e;
-  font-family: "Slim-Joe", "Helvetica Neue", "Arial";
+  font-family: 'Nunito', "Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif;
   font-weight: 400;
 }
 .section-numbers-1 .description, .section-numbers-2 .description, .section-numbers-3 .description {
