@@ -7,11 +7,15 @@
 @import 'sections';
 @import 'footer';
 
+html {
+  background: #373737;
+}
+
 #particles-js canvas {
-    background-color: darken($primary, 11);
-    position: absolute;
-    width: auto;
-    height: 100vh;
-    min-height: 700px;
-    z-index: 0;
+  background-color: darken($primary, 11);
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  min-height: 700px;
+  z-index: 0;
 }
