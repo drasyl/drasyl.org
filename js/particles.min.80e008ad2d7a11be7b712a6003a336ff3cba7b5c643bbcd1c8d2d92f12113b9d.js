@@ -1,0 +1,1 @@
+particlesJS("particles-js",{particles:{number:{value:100},color:{value:"#ffffff"},opacity:{value:.5},size:{value:3,random:!0},line_linked:{enable:!0,distance:150,color:"#41ead4",opacity:.2,width:1},move:{enable:!0,speed:2,direction:"none",random:!1,straight:!1,out_mode:"out",bounce:!1}},retina_detect:!0})
