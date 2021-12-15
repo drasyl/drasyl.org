@@ -16,7 +16,7 @@
   </div>
   <div class="container footer-bottom clearfix">
     <div class="copyright">
-      &copy; 2020-2021
+      &copy; 2020-{{ now.Year }}
       <strong><span>Heiko Bornholdt and Kevin Röbert</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
@@ -28,11 +28,11 @@
 <!-- Vendor JS Files -->
 <script src="{{ "vendor/aos/aos.js" | relURL }}"></script>
 <script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
-<script src="{{ "vendor/glightbox/js/glightbox.min.js" | relURL }}"></script>
-<script src="{{ "vendor/isotope-layout/isotope.pkgd.min.js" | relURL }}"></script>
-<script src="{{ "vendor/swiper/swiper-bundle.min.js" | relURL }}"></script>
-<script src="{{ "vendor/waypoints/noframework.waypoints.js" | relURL }}"></script>
-<script src="{{ "vendor/php-email-form/validate.js" | relURL }}"></script>
+<!-- <script src="{{ "vendor/glightbox/js/glightbox.min.js" | relURL }}"></script> -->
+<!-- <script src="{{ "vendor/isotope-layout/isotope.pkgd.min.js" | relURL }}"></script> -->
+<!-- <script src="{{ "vendor/swiper/swiper-bundle.min.js" | relURL }}"></script> -->
+<!-- <script src="{{ "vendor/waypoints/noframework.waypoints.js" | relURL }}"></script> -->
+<!-- <script src="{{ "vendor/php-email-form/validate.js" | relURL }}"></script> -->
 <script src="{{ "vendor/particles/particles.min.js" | relURL }}"></script>
 <!-- Template Main JS File -->
 {{ $script := resources.Get "js/main.js" }}
