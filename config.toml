@@ -1,0 +1,6 @@
+baseURL = 'https://drasyl.org/'
+languageCode = 'en-us'
+title = 'drasyl'
+theme = 'Arsha'
+disableKinds = ['taxonomy', 'taxonomyTerm']
+
