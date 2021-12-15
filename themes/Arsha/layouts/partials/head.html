@@ -22,6 +22,8 @@
   <!-- Template Main CSS File -->
   {{ $style := resources.Get "css/style.css" }}
   <link href="{{ ($style | postCSS | minify | fingerprint).RelPermalink }}" rel="stylesheet">
+  {{ $customizations := resources.Get "css/customizations.css" }}
+  <link href="{{ ($customizations | postCSS | minify | fingerprint).RelPermalink }}" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Arsha - v4.7.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
