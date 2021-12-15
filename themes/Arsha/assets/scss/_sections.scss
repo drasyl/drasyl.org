@@ -21,7 +21,7 @@ section {
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: $secondary;
+    color: $primary;
   }
 
   h2::before {
@@ -350,8 +350,9 @@ section {
       font-weight: 500;
       margin-bottom: 15px;
       font-size: 24px;
+      color: $primary;
       a {
-        color: $secondary;
+        color: $primary;
         transition: ease-in-out 0.3s;
       }
   
@@ -376,7 +377,7 @@ section {
 # Cta
 --------------------------------------------------------------*/
 .cta {
-  background: linear-gradient(rgba(darken($secondary, 10), .9), rgba(darken($secondary, 10), .9)), url("../img/cta-bg.jpg") fixed center center;
+  background: linear-gradient(rgba(darken(#373737, 0), .9), rgba(darken(#373737, 0), .9)), url("../img/cta-bg.jpg") fixed center center;
   background-size: cover;
   padding:  120px 0;
 
@@ -388,6 +389,14 @@ section {
 
   p {
     color: #fff;
+  }
+
+  a {
+    color: lighten($primary, 15);
+  }
+
+  a:hover {
+    color: lighten($primary, 20);
   }
 
   .cta-btn {
@@ -619,7 +628,7 @@ section {
       font-weight: 700;
       margin-bottom: 5px;
       font-size: 20px;
-      color: $secondary;
+      color: $primary;
     }
     
     span {
@@ -663,7 +672,7 @@ section {
         background: lighten($secondary, 60);
 
         i {
-          color: $secondary;
+          color: $primary;
           font-size: 16px;
           margin: 0 2px;
         }

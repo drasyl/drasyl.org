@@ -6,3 +6,12 @@
 @import 'hero';
 @import 'sections';
 @import 'footer';
+
+#particles-js canvas {
+    background-color: darken($primary, 11);
+    position: absolute;
+    width: auto;
+    height: 100vh;
+    min-height: 700px;
+    z-index: 0;
+}

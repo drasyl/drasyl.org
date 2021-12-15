@@ -39,7 +39,7 @@
   }
 
   a:hover, .active, .active:focus, li:hover > a  {
-    color: $primary;
+    color: rgba(#fff, 0.8);
   }
 
   .getstarted, .getstarted:focus {
@@ -48,11 +48,11 @@
     border-radius: 50px;
     color: #fff;
     font-size: 14px;
-    border: 2px solid $primary;
+    border: 2px solid #fff;
     font-weight: 600;
     &:hover {
       color: #fff;
-      background: darken($primary, 5);
+      background: lighten($primary, 7);
     }
   }
 
@@ -165,7 +165,7 @@
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(darken($secondary, 10), 0.9);
+  background: rgba(#282828, 0.9);
   transition: 0.3s;
   z-index: 999;
 
@@ -192,7 +192,7 @@
   a, a:focus {
     padding: 10px 20px;
     font-size: 15px; 
-    color: $secondary;
+    color: $primary;
   }
 
   a:hover, .active, li:hover > a  {
@@ -201,7 +201,7 @@
 
   .getstarted, .getstarted:focus {
     margin: 15px;
-    color: $secondary;
+    color: $primary;
   }
 
   .dropdown {

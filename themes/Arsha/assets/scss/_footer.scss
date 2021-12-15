@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: $secondary;
+  background: #373737;
 
   .footer-newsletter {
     padding: 50px 0;
@@ -85,7 +85,7 @@
     h4 {
       font-size: 16px;
       font-weight: bold;
-      color: $secondary;
+      color: $primary;
       position: relative;
       padding-bottom: 12px;
     }
@@ -165,6 +165,10 @@
     font-size: 13px;
     a {
       transition: 0.3s;
+      color: #fff;
+      &:hover {
+        color: rgba(#fff, 0.8);
+      }
     }
   }
 
