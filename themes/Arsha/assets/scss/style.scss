@@ -11,6 +11,7 @@ html {
   background: #373737;
 }
 
+/* purgecss ignore */
 #particles-js canvas {
   background-color: darken($primary, 11);
   position: absolute;
