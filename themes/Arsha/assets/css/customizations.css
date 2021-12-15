@@ -1,0 +1,200 @@
+a {
+  color: #005E54;
+}
+.back-to-top {
+  background: #005E54;
+}
+.back-to-top:hover {
+  background: #009485;
+}
+#header.header-scrolled, #header.header-inner-pages {
+  background: #005e54;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.navbar .getstarted, .navbar .getstarted:focus {
+  border: 2px solid #ffffff;
+}
+.navbar .getstarted:hover, .navbar .getstarted:focus:hover {
+  background: #009485;
+}
+.navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
+  color: #005E54;
+}
+.navbar-mobile {
+  background: rgba(40, 40, 40, 0.9);
+}
+.navbar-mobile a, .navbar-mobile a:focus {
+  color: #005e54;
+}
+.navbar-mobile a:hover, .navbar-mobile .active, .navbar-mobile li:hover > a {
+  color: #005E54;
+}
+.navbar-mobile .getstarted, .navbar-mobile .getstarted:focus {
+  color: #005e54;
+}
+.navbar-mobile .dropdown ul a:hover, .navbar-mobile .dropdown ul .active:hover, .navbar-mobile .dropdown ul li:hover > a {
+  color: #005E54;
+}
+#hero {
+  height: 100vh;
+  background: initial;
+  min-height: 700px;
+  z-index: 3;
+}
+#hero .btn-get-started {
+  background: #005E54;
+}
+#hero .btn-get-started:hover {
+  background: #009485;
+}
+#hero .btn-watch-video:hover i {
+  color: #009485;
+}
+.section-title h2 {
+  color: #005E54;
+}
+.section-title h2::after {
+  background: #005E54;
+}
+.about .content ul i {
+  color: #005E54;
+}
+.about .content .btn-learn-more {
+  color: #005E54;
+  border: 2px solid #005E54;
+}
+.about .content .btn-learn-more:hover {
+  background: #005E54;
+}
+.why-us .accordion-list span {
+  color: #005E54;
+}
+.why-us .accordion-list a.collapsed:hover {
+  color: #005E54;
+}
+.skills .content ul i {
+  color: #005E54;
+}
+.services .icon-box .icon i {
+  color: #005E54;
+}
+.services .icon-box h4 {
+  color: #005E54;
+}
+.services .icon-box:hover h4 a {
+  color: #005E54;
+}
+.cta {
+  background: linear-gradient(rgba(40, 40, 40, 0.9), rgba(40, 40, 40, 0.9)), url("../img/cta-bg.jpg") fixed center center;
+}
+.cta .cta-btn:hover {
+  background: #005E54;
+  border: 2px solid #005E54;
+}
+.cta a {
+  color: rgb(0, 148, 133);
+}
+.cta a:hover {
+  color: rgba(0, 148, 133, 0.8);
+}
+.portfolio #portfolio-flters li:hover, .portfolio #portfolio-flters li.filter-active {
+  background: #005E54;
+}
+.portfolio .portfolio-item .portfolio-info .preview-link:hover, .portfolio .portfolio-item .portfolio-info .details-link:hover {
+  color: #005E54;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+  border: 1px solid #005E54;
+}
+.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #005E54;
+}
+.team .member h4 {
+  color: #005e54;
+}
+.team .member .social a i {
+  color: #005e54;
+}
+.team .member .social a:hover {
+  background: #005E54;
+}
+.pricing h4 span {
+  color: #005E54;
+}
+.pricing .buy-btn {
+  color: #005E54;
+  border: 1px solid #005E54;
+}
+.pricing .buy-btn:hover {
+  background: #005E54;
+}
+.pricing .featured {
+  border-top-color: #005E54;
+}
+.pricing .featured .buy-btn {
+  background: #005E54;
+}
+.faq .faq-list .icon-help {
+  color: #005E54;
+}
+.faq .faq-list a.collapsed:hover {
+  color: #005E54;
+}
+.contact .info {
+  border-top: 3px solid #005E54;
+  border-bottom: 3px solid #005E54;
+}
+.contact .info i {
+  color: #005E54;
+}
+.contact .info .social-links a:hover {
+  background: #005E54;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #005E54;
+}
+.contact .php-email-form {
+  border-top: 3px solid #005E54;
+  border-bottom: 3px solid #005E54;
+}
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #005E54;
+}
+.contact .php-email-form button[type=submit] {
+  background: #005E54;
+}
+#footer {
+  background: #373737;
+}
+#footer .footer-newsletter form input[type=submit] {
+  background: #005E54;
+}
+#footer .footer-top h4 {
+  color: #005e54;
+}
+#footer .footer-top .footer-links ul i {
+  color: #005E54;
+}
+#footer .footer-top .footer-links ul a:hover {
+  color: #005E54;
+}
+#footer .footer-top .social-links a {
+  background: #005E54;
+}
+#footer .credits a {
+  color: #fff;
+}
+#footer .credits a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#particles-js canvas {
+    background-color: #003933;
+    position: absolute;
+    width: auto;
+    height: 100vh;
+    min-height: 700px;
+    z-index: 0;
+}
