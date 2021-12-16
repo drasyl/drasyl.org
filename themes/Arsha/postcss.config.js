@@ -4,7 +4,8 @@ module.exports = {
       content: ['themes/Arsha/layouts/**/*.html'],
       safelist: [
         'canvas',
-        'header-scrolled'
+        'header-scrolled',
+        'navbar-mobile'
       ]
     },
     autoprefixer: {},
