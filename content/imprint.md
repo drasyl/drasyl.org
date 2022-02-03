@@ -1,3 +1,4 @@
+
 ---
 title: "Imprint"
 date: 2021-02-04T00:10:00+01:00
@@ -30,7 +31,7 @@ Insofar as the content on this site was not created by the operator, the copyrig
 
 Source: [e-recht24.de](https://www.e-recht24.de)
 
-#### Privacy Policy
+## Privacy Policyㅤ
 
 We are very delighted that you have shown interest in our enterprise. Data protection is of a particularly high priority for the management of the drasyl.org. The use of the Internet pages of the drasyl.org is possible without any indication of personal data; however, if a data subject wants to use special enterprise services via our website, processing of personal data could become necessary. If the processing of personal data is necessary and there is no statutory basis for such processing, we generally obtain consent from the data subject.
 
