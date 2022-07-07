@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+	{{ partial "head.html" . }}
+	<body class="list list-{{ .Type | singularize }}">
+		{{ partial "header.html" . }}
+		<main id="main">
+			<section id="breadcrumbs" class="breadcrumbs">
+				<div class="container">
+					<ol>
+						<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+						<li>{{ .Title }}</li>
+					</ol>
+					<h2>{{ .Title }}</h2>
+				</div>
+			</section>
+			<section class="inner-page">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-8 col-lg-12">
+							{{ range $index, $value := .Pages }}
+								{{ if ne $index 0 }}
+									<hr style="margin: 40px 0;" />
+								{{ end }}
+
+								<div>					    		
+									<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+									<p>{{ .Date | time.Format ":date_long" }}</p>
+									<div>
+										{{ .Summary }}
+									</div>
+									<div>
+										<a href="{{ .Permalink }}">Read more →</a>
+									</div>
+								</div>
+							{{ end }}
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		{{ partial "footer.html" . }}
+	</body>
+</html>

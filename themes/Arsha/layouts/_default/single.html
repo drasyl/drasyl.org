@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 	{{ partial "head.html" . }}
-	<body class="single">
+	<body class="single single-{{ .Type | singularize }}">
 		{{ partial "header.html" . }}
 		<main id="main">
 			<section id="breadcrumbs" class="breadcrumbs">
 				<div class="container">
 					<ol>
 						<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-						<li>{{ .Title }}</li>
+						{{ if .Section }}<li><a href="{{.Site.BaseURL}}{{.Section}}">{{ .Section | humanize }}</a></li>{{ end }}
+						<li></li>
 					</ol>
 					<h2>{{ .Title }}</h2>
 				</div>
 			</section>
 			<section class="inner-page">
 				<div class="container">
-					<p>
-						{{ .Content }}
-					</p>
+					<div class="row">
+						<div class="col-xl-8 col-lg-12">
+							{{ .Content }}
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>

@@ -3,4 +3,7 @@ languageCode = 'en-us'
 title = 'drasyl - The Overlay Network Framework for Rapid Development of Distributed P2P Applications'
 theme = 'Arsha'
 disableKinds = ['taxonomy', 'taxonomyTerm']
+pluralizeListTitles = false
 
+[taxonomies]
+  blog = 'blog'
