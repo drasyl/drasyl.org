@@ -1,7 +1,7 @@
 ---
 title: "drasyl 0.7.0 released with TUN Device Support and Faster UDP Hole Punching"
 date: 2022-02-18T12:14:00+01:00
-tags: ["Releases"]
+tags: ["Releases", "CLI"]
 draft: true
 ---
 

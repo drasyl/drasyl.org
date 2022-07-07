@@ -1,7 +1,7 @@
 ---
 title: "Bringing Computation Offloading to the Edge - drasyl Use case"
 date: 2022-02-03T15:06:00+01:00
-tags: []
+tags: ["Theses"]
 draft: true
 ---
 

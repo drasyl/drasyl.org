@@ -6,22 +6,24 @@
 		<main id="main">
 			<section id="breadcrumbs" class="breadcrumbs">
 				<div class="container">
-					<ol>
-						<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-						{{ if .Section }}<li><a href="{{.Site.BaseURL}}{{.Section}}">{{ .Section | humanize }}</a></li>{{ end }}
-						<li></li>
-					</ol>
-					<h2>{{ .Title }}</h2>
-					{{ if eq .Section "blog" }}<div>{{ .Date | time.Format ":date_long" }}</div>{{ end }}
+					<div class="row">
+						<div class="col-xl-8 col-lg-12">
+							<ol>
+								<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+								{{ if .Section }}<li><a href="{{.Site.BaseURL}}{{.Section}}">{{ .Section | humanize }}</a></li>{{ end }}
+								<li></li>
+							</ol>
+							<h2>{{ .Title }}</h2>
+							{{ if eq .Section "blog" }}<div>{{ .Date | time.Format ":date_long" }}</div>{{ end }}
+						</div>
+					</div>
 				</div>
 			</section>
 			<section class="inner-page">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-8 col-lg-12">
-							<div>
-								{{ .Content }}
-							</div>
+							{{ .Content }}
 						</div>
 					</div>
 				</div>

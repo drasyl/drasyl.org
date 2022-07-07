@@ -1,7 +1,7 @@
 ---
 title: "drasyl 0.6.0 released with Support for Netty Handlers, Backpressure Mechanism, and Tunnel Utility"
 date: 2021-11-28T01:57:00+01:00
-tags: ["Releases"]
+tags: ["Releases", "CLI"]
 draft: true
 ---
 

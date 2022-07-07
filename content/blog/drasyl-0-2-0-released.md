@@ -1,7 +1,7 @@
 ---
 title: "drasyl 0.2.0 released with Plugin Support, Message Marshalling, and a Wormhole!"
 date: 2020-09-16T00:01:00+01:00
-tags: ["Releases"]
+tags: ["Releases", "CLI"]
 draft: true
 ---
 

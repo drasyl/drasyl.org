@@ -5,5 +5,5 @@ theme = 'Arsha'
 disableKinds = ['taxonomy', 'taxonomyTerm']
 pluralizeListTitles = false
 
-[taxonomies]
-  blog = 'blog'
+[markup.goldmark.renderer]
+unsafe = true
