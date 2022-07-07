@@ -12,13 +12,16 @@
 						<li></li>
 					</ol>
 					<h2>{{ .Title }}</h2>
+					{{ if eq .Section "blog" }}<div>{{ .Date | time.Format ":date_long" }}</div>{{ end }}
 				</div>
 			</section>
 			<section class="inner-page">
 				<div class="container">
 					<div class="row">
 						<div class="col-xl-8 col-lg-12">
-							{{ .Content }}
+							<div>
+								{{ .Content }}
+							</div>
 						</div>
 					</div>
 				</div>
