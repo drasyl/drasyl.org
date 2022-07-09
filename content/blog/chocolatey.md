@@ -1,13 +1,12 @@
 ---
 title: "For our Windows User(s): Install drasyl CLI via Chocolatey"
 date: 2021-03-13T00:00:00Z
-tags: ["CLI"]
-draft: true
+tags: ["cli"]
 ---
 
 ![chopped chocolate photo](/img/charisse-kenion-tWe8ib-cnXY-unsplash.jpg)
 
-Following our last year's announcement of bringing drasyl to Homebrew for Linux and macOS users, we're now [bringing drasyl to Chocolatey](https://community.chocolatey.org/packages/drasyl).
+Following our [last year's announcement of bringing drasyl to Homebrew for Linux and macOS users](/blog/homebrew/), we're now [bringing drasyl to Chocolatey](https://community.chocolatey.org/packages/drasyl).
 
 [Chocolatey](https://chocolatey.org/) is "The Package Manager for Windows".
 Therefore, it provides a very confortable way to install/update the [drasyl CLI](https://docs.drasyl.org/cli/) for our Windows users.

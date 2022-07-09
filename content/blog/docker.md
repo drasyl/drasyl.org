@@ -1,8 +1,7 @@
 ---
 title: "Run drasyl CLI through Docker"
 date: 2020-07-17T12:11:00+01:00
-tags: ["CLI"]
-draft: true
+tags: ["cli"]
 ---
 
 ![Lot of cargo freight containers in the Hong Kong sea port](/img/timelab-pro-sWOvgOOFk1g-unsplash.jpg)
@@ -45,7 +44,7 @@ $ docker run -i -t -p 22527:22527 \
     -v $PWD/drasyl.identity:/drasyl.identity \
     drasyl/drasyl node
 ````
-This command passes the just generated identity to the docker container and then launch the drasyl node command.
+This command passes the generated identity to the docker container and launches the drasyl node command.
 
 ---
 

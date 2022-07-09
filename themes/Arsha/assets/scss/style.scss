@@ -28,8 +28,12 @@ html {
   user-select: none;
 }
 
-.single-blog img, .list-blog img {
-  width: 100%;
+.single-blog,
+.list-blog,
+.list-tag {
+  img {
+    max-width: 100%;   
+  }
 }
 
 blockquote {

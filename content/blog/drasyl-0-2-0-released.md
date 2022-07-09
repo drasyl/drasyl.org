@@ -1,13 +1,12 @@
 ---
-title: "drasyl 0.2.0 released with Plugin Support, Message Marshalling, and a Wormhole!"
+title: "drasyl 0.2.0 released with Plugin Support, Message Marshaling, and a Wormhole!"
 date: 2020-09-16T00:01:00+01:00
-tags: ["Releases", "CLI"]
-draft: true
+tags: ["releases", "cli"]
 ---
 
 ![A close-up of an electrical outlet and plug](/img/clint-patterson-exfrR9KkzlE-unsplash.jpg)
 
-Today, we are excited to announce the release of drasyl 0.2.0 with plugin support, message marshalling, port forwarding, a file system-based peer discovery, and a ominously wormhole 🕳️.
+Today, we are excited to announce the release of drasyl 0.2.0 with plugin support, message marshaling, port forwarding, a filesystem-based peer discovery, and an ominous wormhole 🕳️.
 
 <!--more-->
 
@@ -51,20 +50,12 @@ Today, we are excited to announce the release of drasyl 0.2.0 with plugin suppor
 
 ### Wormhole!?
 
-Starting with version 0.1.0 we also provided a [Command Line Interface](https://git.informatik.uni-hamburg.de/sane-public/drasyl/-/tree/v0.2.0/drasyl-cli) with useful tools around drasyl (e.g. start a super peer).
-This CLI has now been extended by the tool `wormhole`.
+Starting with version 0.1.0, we also provided a [Command Line Interface](https://git.informatik.uni-hamburg.de/sane-public/drasyl/-/tree/v0.2.0/drasyl-cli) with useful tools around drasyl (e.g., start a super-peer). This CLI has now been extended by the tool `wormhole`.
 
-Here, we were inspired by Brian Warner and his software [Magic Wormhole](https://magic-wormhole.readthedocs.io/en/latest/).
-Magic Wormhole can transfer messages, files, or whole directories from one computer to another.
-For this, none of the computers must be reachable from the Internet.
-You can read more about how this works in [Brian's Talk from PyCon 2016](https://youtu.be/oFrTqQw0_3c).
+Here, we were inspired by Brian Warner and his software [Magic Wormhole](https://magic-wormhole.readthedocs.io/en/latest/). Magic Wormhole can transfer messages, files, or whole directories from one computer to another. For this, none of the computers must be reachable from the Internet. You can read more about how this works in [Brian's Talk from PyCon 2016](https://youtu.be/oFrTqQw0_3c).
 
-So and what is the use of the wormhole in drasyl?
-drasyl has the same goal our inspiration source:
-Transferring data - regardless of the location - between any two computers on the world.
-In contrast to Magic Wormhole, drasyl can also establish direct connections and thus avoids the detour via a central relay.
-With the planned additional locality-aware discovery and routing methods, we wanted to add to drasyl in the future, our wormhole be able to select more and better routes.
-At the moment, we support only transfering single text messages, but in the future we want to be able to transfer files as well.
+So and what is the use of the wormhole in drasyl? drasyl has the same goal as our inspiration source: Transferring data - regardless of the location - between any two computers worldwide. In contrast to Magic Wormhole, drasyl can also establish direct connections, thus avoiding the detour via a central relay. With the planned additional locality-aware discovery and routing methods we wanted to add to drasyl in the future, our wormhole can select more and better routes. At the moment, we support only transferring single text messages, but in the future, we want to be able to transfer files as well.
+
 
 ---
 

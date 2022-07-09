@@ -1,10 +1,10 @@
 ---
 title: "drasyl Discord Server"
 date: 2022-04-01T18:39:00+01:00
-draft: true
 ---
 
-We just want to let you know, that there is now a drasyl Discord Channel!
+We want to let you know that there is now a drasyl Discord Channel!
+There you can get in touch with other drasyl users and maintainers.
 <!--more-->
 You can join with [this link](https://discord.gg/2tcZPy7BCu).
 

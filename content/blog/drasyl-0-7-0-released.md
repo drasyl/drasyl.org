@@ -1,8 +1,7 @@
 ---
 title: "drasyl 0.7.0 released with TUN Device Support and Faster UDP Hole Punching"
 date: 2022-02-18T12:14:00+01:00
-tags: ["Releases", "CLI"]
-draft: true
+tags: ["releases", "cli"]
 ---
 
 ![Graustufenfotografie eines leeren Tunnels](/img/clint-adair-BW0vK-FA3eg-unsplash.jpg)
@@ -68,12 +67,7 @@ ProofOfWork = -2144920491
 
 ### TUN Device Support
 
-The CLI has been extended by the so-called `tun` utility.
-This is a very cool feature:
-The utility creates a virtual local network interface on your computer, with corresponding IP address, netmask and routing table.
-With this interface, any computers on the Internet can be tied together into one virtual network, were any-to-any communication is possible.
-All IP based programs will work without any customization!
-Currently, Linux, macOS and Windows are supported.
+The CLI has been extended by the so-called tun utility. This is a very cool feature: The utility creates a virtual local network interface on your computer, corresponding IP address, netmask, and routing table. With this interface, any computers on the Internet can be tied into one virtual network, where any-to-any communication is possible. All IP-based programs will work without any customization! Currently, Linux, macOS, and Windows are supported.
 
 ---
 

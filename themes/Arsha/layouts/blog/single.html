@@ -14,6 +14,10 @@
 								<li></li>
 							</ol>
 							<h2>{{ .Title }}</h2>
+							<div>
+								On {{ .Date | time.Format ":date_long" }}
+								{{ range $index, $value := .Params.tags }}{{ if ne $index 0 }},{{else}} in{{ end }} <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ .| humanize | title }}</a>{{ end }}
+							</div>
 						</div>
 					</div>
 				</div>
@@ -23,6 +27,9 @@
 					<div class="row">
 						<div class="col-xl-8 col-lg-12">
 							{{ .Content }}
+							<div style="text-align: center; padding-top: 40px;">
+								<a href="{{ .Site.BaseURL }}{{ .Section }}">← Back to index</a>
+							</div>
 						</div>
 					</div>
 				</div>

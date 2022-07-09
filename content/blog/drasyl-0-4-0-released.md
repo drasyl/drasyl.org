@@ -1,8 +1,7 @@
 ---
 title: "drasyl 0.4.0 released with UDP Hole Punching, Message Chunking, and Bandwidth Measurement Utility"
 date: 2021-02-27T22:13:00+01:00
-tags: ["Releases", "CLI"]
-draft: true
+tags: ["releases", "cli"]
 ---
 
 ![person holding fist to camera](/img/dan-burton-nRW4I8kuyd8-unsplash.jpg)
@@ -65,8 +64,7 @@ Today, we are excited to announce the release of drasyl 0.4.0 with UPD hole punc
 
 ### Network Bandwidth Measurement Utility
 
-To evaluate the performance of drasyl or certain functions, we added the tool `perf` to the CLI, which can be used to measure the drasyl network bandwidth between two peers.
-We were inspired by [iperf3](https://github.com/esnet/iperf), which measures TCP/UDP traffic.
+To evaluate the performance of drasyl or specific functions, we added the tool perf to the CLI, which can measure the drasyl network bandwidth between two peers. We were inspired by [iperf3](https://github.com/esnet/iperf), which measures TCP/UDP traffic.
 
 ---
 

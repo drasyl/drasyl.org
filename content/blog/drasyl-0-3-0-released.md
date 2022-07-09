@@ -1,8 +1,7 @@
 ---
 title: "drasyl 0.3.0 released with Network Separation, and Groups Plugin"
 date: 2020-10-30T12:43:00+01:00
-tags: ["Releases"]
-draft: true
+tags: ["releases"]
 ---
 
 ![Hands holding a paper chain](/img/andrew-moca-r3Nl1mIKqbI-unsplash.jpg)
