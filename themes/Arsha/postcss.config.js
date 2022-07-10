@@ -5,7 +5,10 @@ module.exports = {
       safelist: [
         'canvas',
         'header-scrolled',
-        'navbar-mobile'
+        'navbar-mobile',
+        'single-blog',
+        'list-blog',
+        'list-tag'
       ]
     },
     autoprefixer: {},

@@ -2,5 +2,8 @@ baseURL = 'https://drasyl.org/'
 languageCode = 'en-us'
 title = 'drasyl - The Overlay Network Framework for Rapid Development of Distributed P2P Applications'
 theme = 'Arsha'
-disableKinds = ['taxonomy', 'taxonomyTerm']
+disableKinds = ['taxonomyTerm']
+pluralizeListTitles = false
 
+[markup.goldmark.renderer]
+unsafe = true
