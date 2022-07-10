@@ -50,7 +50,7 @@ Today, we are excited to announce the release of drasyl 0.2.0 with plugin suppor
 
 ### Wormhole!?
 
-Starting with version 0.2.0, we also provided a [Command Line Interface](https://git.informatik.uni-hamburg.de/sane-public/drasyl/-/tree/v0.2.0/drasyl-cli) with useful tools around drasyl (e.g., start a super-peer). This CLI has now been extended by the tool `wormhole`.
+Starting with [version 0.1.0](/blog/drasyl-0-1-0-released/), we also provided a [Command Line Interface](https://git.informatik.uni-hamburg.de/sane-public/drasyl/-/tree/v0.2.0/drasyl-cli) with useful tools around drasyl (e.g., start a super-peer). This CLI has now been extended by the tool `wormhole`.
 
 Here, we were inspired by Brian Warner and his software [Magic Wormhole](https://magic-wormhole.readthedocs.io/en/latest/). Magic Wormhole can transfer messages, files, or whole directories from one computer to another. For this, none of the computers must be reachable from the Internet. You can read more about how this works in [Brian's Talk from PyCon 2016](https://youtu.be/oFrTqQw0_3c).
 
