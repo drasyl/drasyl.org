@@ -4,7 +4,7 @@ date: 2022-02-18T12:14:00+01:00
 tags: ["releases", "cli"]
 ---
 
-![Graustufenfotografie eines leeren Tunnels](/img/clint-adair-BW0vK-FA3eg-unsplash.jpg)
+![Green rope meshwork](/img/clint-adair-BW0vK-FA3eg-unsplash.jpg)
 
 Today, we are excited to announce the release of drasyl 0.7.0 with TUN device support, faster UDP hole punching, IP broadcast-based peer discovery, and identity generation utility.
 
