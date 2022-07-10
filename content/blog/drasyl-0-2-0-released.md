@@ -4,7 +4,7 @@ date: 2020-09-16T00:01:00+01:00
 tags: ["releases", "cli"]
 ---
 
-![A close-up of an electrical outlet and plug](/img/clint-patterson-exfrR9KkzlE-unsplash.jpg)
+![wormhole](/img/wormhole-g4db043e5d_1920.jpg)
 
 Today, we are excited to announce the release of drasyl 0.2.0 with plugin support, message marshaling, port forwarding, a filesystem-based peer discovery, and an ominous wormhole 🕳️.
 
@@ -56,7 +56,6 @@ Here, we were inspired by Brian Warner and his software [Magic Wormhole](https:/
 
 So and what is the use of the wormhole in drasyl? drasyl has the same goal as our inspiration source: Transferring data – regardless of the location – between any two computers worldwide. In contrast to Magic Wormhole, drasyl can also establish direct connections, thus avoiding the detour via a central relay. With the planned additional locality-aware discovery and routing methods we wanted to add to drasyl in the future, our wormhole can select more and better routes. At the moment, we support only transferring single text messages, but in the future, we want to be able to transfer files as well.
 
-
 ---
 
-Photo by [Clint Patterson](https://unsplash.com/@cbpsc1) on [Unsplash](https://unsplash.com/)
+Photo by [Alexander Antropov](https://pixabay.com/de/users/alexantropov86-2691829/) on [Pixabay](https://pixabay.com/)
