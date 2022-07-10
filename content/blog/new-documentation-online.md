@@ -11,7 +11,7 @@ While our documentation is still readable via the Repository file browser, MkDoc
 
 <!--more-->
 
-While `https://docs.drasyl.org/` provides the documentation for the latest release, you can also go directly to a version-specific Documentation.
+While `https://docs.drasyl.org/` provides the documentation for the latest release, you can also go directly to a version-specific documentation.
 Just click on the version below the menu and select the desired release.
 
 However, you can also go directly to the desired version:

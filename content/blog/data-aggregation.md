@@ -10,7 +10,7 @@ Today's paper is about a master thesis that deals with in-network data processin
 Maintaining data integrity in in-network data processing systems is difficult.
 While individual nodes can be assumed to cooperate in closed systems, malicious participants must be detected and dealt with in open networks.
 <!--more-->
-The work presented here deals with the prototypical implementation of the approach presented in the paper [Accountant: Protection of Data Integrity and Identification of Malicious Nodes in In-network Data Processing.](https://www.scitepress.org/Papers/2020/89744/89744.pdf).
+The work presented here deals with the prototypical implementation of the approach presented in the paper [Accountant: Protection of Data Integrity and Identification of Malicious Nodes in In-network Data Processing](https://www.scitepress.org/Papers/2020/89744/89744.pdf).
 
 The approach was first implemented with [Akka](https://akka.io/) and later implemented with drasyl.
 Get in touch with us if you are interested in this prototype.
