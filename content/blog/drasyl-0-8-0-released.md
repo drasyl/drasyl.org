@@ -84,7 +84,7 @@ The routing table of the TUN device introduced with [version 0.7.0](/blog/drasyl
 This works the same way as the `node` command (see above).
 The methods `add-route`, `identity`, `remove-route`, and `routes` are available.
 
-Here, too, a suitable client is supplied with `tun-rc`.
+Here, too, a client is supplied with `tun-rc`.
 
 ---
 
