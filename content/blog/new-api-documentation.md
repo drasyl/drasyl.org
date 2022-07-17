@@ -1,6 +1,7 @@
 ---
 title: "New Javadoc Website"
 date: 2021-10-12T00:32:00+01:00
+images: ["img/pexels-thisisengineering-3861943.jpg"]
 ---
 
 ![Woman Writing on Whiteboard](/img/pexels-thisisengineering-3861943.jpg)

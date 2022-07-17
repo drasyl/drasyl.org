@@ -2,6 +2,7 @@
 title: "drasyl 0.8.0 released with improved Hole Punching, Remote Controlling for CLI, and increased TUN Device performance"
 date: 2022-07-10T12:14:00+01:00
 tags: ["releases", "cli"]
+images: ["img/jack-anstey-zS4lUqLEiNA-unsplash.jpg"]
 ---
 
 ![aerial photography of road](/img/jack-anstey-zS4lUqLEiNA-unsplash.jpg)

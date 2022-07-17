@@ -2,6 +2,7 @@
 title: "Bringing Computation Offloading to the Edge"
 date: 2022-02-03T15:06:00+01:00
 tags: ["theses", "research", "use case"]
+images: ["img/jake-ingle-s-t1oJXKYI4-unsplash.jpg"]
 ---
 
 ![Feet dangling from a building](/img/jake-ingle-s-t1oJXKYI4-unsplash.jpg)

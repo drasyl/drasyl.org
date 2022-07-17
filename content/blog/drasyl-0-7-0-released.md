@@ -2,6 +2,7 @@
 title: "drasyl 0.7.0 released with TUN Device Support and Faster UDP Hole Punching"
 date: 2022-02-18T12:14:00+01:00
 tags: ["releases", "cli"]
+images: ["img/clint-adair-BW0vK-FA3eg-unsplash.jpg"]
 ---
 
 ![Green rope meshwork](/img/clint-adair-BW0vK-FA3eg-unsplash.jpg)

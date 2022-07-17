@@ -2,6 +2,7 @@
 title: "Data Integrity in Smart Urban Data Spaces"
 date: 2021-07-12T00:00:00+01:00
 tags: ["theses", "research", "use case"]
+images: ["img/pietro-jeng-n6B49lTx7NM-unsplash.jpg"]
 ---
 
 ![green and red light illuminated net](/img/pietro-jeng-n6B49lTx7NM-unsplash.jpg)

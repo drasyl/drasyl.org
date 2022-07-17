@@ -2,6 +2,7 @@
 title: "Smart Urban Data Space for Citizen Science"
 date: 2021-10-08T00:00:00+01:00
 tags: ["research", "use case"]
+images: ["img/sane_logo.png"]
 ---
 
 ![SANE logo](/img/sane_logo.png)

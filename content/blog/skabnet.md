@@ -2,6 +2,7 @@
 title: "SkABNet: A Attribut-Based SkipNet built on drasyl"
 date: 2021-06-14T10:00:00+01:00
 tags: ["research", "software", "use case"]
+images: ["img/skabnet_logo.png"]
 ---
 
 ![SkABNet logo](/img/skabnet_logo.png)

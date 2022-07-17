@@ -2,6 +2,7 @@
 title: "drasyl 0.1.0 released - The Journey Begins!"
 date: 2020-07-10T15:36:00+01:00
 tags: ["releases", "teaching"]
+images: ["img/matt-duncan-IUY_3DvM__w-unsplash.jpg"]
 ---
 
 ![Highway 212 forest road](/img/matt-duncan-IUY_3DvM__w-unsplash.jpg)

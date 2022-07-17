@@ -2,6 +2,7 @@
 title: "Accessing Smart City Services in Untrustworthy Environments via Decentralized Privacy-Preserving Overlay Networks"
 date: 2021-10-15T00:00:00
 tags: ["publication", "research","use case"]
+images: ["img/denys-nevozhai-_QoAuZGAoPY-unsplash.jpg"]
 ---
 
 ![Cityscape and interchange](/img/denys-nevozhai-_QoAuZGAoPY-unsplash.jpg)

@@ -7,3 +7,6 @@ pluralizeListTitles = false
 
 [markup.goldmark.renderer]
 unsafe = true
+
+[params]
+  images = ['img/drasyl-og.png']

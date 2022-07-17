@@ -2,6 +2,7 @@
 title: "drasyl Network Explorer launched"
 date: 2021-09-04T03:29:00+01:00
 tags: []
+images: ["img/network-explorer.png"]
 ---
 
 ![Screenshot of drasyl.network](/img/network-explorer.png)

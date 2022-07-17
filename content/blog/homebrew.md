@@ -2,6 +2,7 @@
 title: "Install drasyl CLI via Homebrew"
 date: 2020-11-20T16:43:00Z
 tags: ["cli"]
+images: ["img/martin-knize-DQpHtE5WY-U-unsplash.jpg"]
 ---
 
 ![Copper alcohol distillery](/img/martin-knize-DQpHtE5WY-U-unsplash.jpg)

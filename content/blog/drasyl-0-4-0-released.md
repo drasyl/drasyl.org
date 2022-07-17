@@ -2,6 +2,7 @@
 title: "drasyl 0.4.0 released with UDP Hole Punching, Message Chunking, and Bandwidth Measurement Utility"
 date: 2021-02-27T22:13:00+01:00
 tags: ["releases", "cli"]
+images: ["img/dan-burton-nRW4I8kuyd8-unsplash.jpg"]
 ---
 
 ![person holding fist to camera](/img/dan-burton-nRW4I8kuyd8-unsplash.jpg)

@@ -2,6 +2,7 @@
 title: "For our Windows User(s): Install drasyl CLI via Chocolatey"
 date: 2021-03-13T00:00:00Z
 tags: ["cli"]
+images: ["img/charisse-kenion-tWe8ib-cnXY-unsplash.jpg"]
 ---
 
 ![chopped chocolate photo](/img/charisse-kenion-tWe8ib-cnXY-unsplash.jpg)

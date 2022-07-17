@@ -6,8 +6,7 @@
   <meta content="" name="keywords">
   <meta name="theme-color" content="#005e54">
   <meta name="author" content="Heiko Bornholdt and Kevin Röbert" />
-  <meta property="og:image" content="{{ "img/drasyl-og.png" | absURL }}">
-  <meta property="og:title" content="{{ if ne .Title .Site.Title }}{{ .Title }} | {{ end }}{{ .Site.Title }}">
+  {{ template "_internal/opengraph.html" . }}
   <!-- Favicons -->
   <link href="{{ "img/favicon.png" | relURL }}" rel="icon">
   <link href="{{ "img/logo192.png" | relURL }}" rel="apple-touch-icon">

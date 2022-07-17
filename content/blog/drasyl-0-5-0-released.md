@@ -2,6 +2,7 @@
 title: "drasyl 0.5.0 released with E2E Encryption, LAN Discovery, and TCP Fallback"
 date: 2021-06-28T23:39:00+01:00
 tags: ["releases"]
+images: ["img/pexels-life-of-pix-4291.jpg"]
 ---
 
 ![Brass Color Metal Padlock With Chain](/img/pexels-life-of-pix-4291.jpg)

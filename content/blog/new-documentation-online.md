@@ -1,6 +1,7 @@
 ---
 title: "New Documentation Website Online"
 date: 2020-09-17T05:09:00+01:00
+images: ["img/maksym-kaharlytskyi-Q9y3LRuuxmg-unsplash.jpg"]
 ---
 
 ![file cabinet photo](/img/maksym-kaharlytskyi-Q9y3LRuuxmg-unsplash.jpg)

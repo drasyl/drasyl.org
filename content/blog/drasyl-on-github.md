@@ -1,6 +1,7 @@
 ---
 title: "drasyl available on GitHub now!"
 date: 2020-07-13T18:43:21Z
+images: ["img/roman-synkevych-wX2L8L-fGeA-unsplash.jpg"]
 ---
 
 ![A figurine of an oktokat in the center, in the background a laptop with the main page of the GitHub open.](/img/roman-synkevych-wX2L8L-fGeA-unsplash.jpg)

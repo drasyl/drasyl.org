@@ -2,6 +2,7 @@
 title: "Run drasyl CLI through Docker"
 date: 2020-07-17T12:11:00+01:00
 tags: ["cli"]
+images: ["img/timelab-pro-sWOvgOOFk1g-unsplash.jpg"]
 ---
 
 ![Lot of cargo freight containers in the Hong Kong sea port](/img/timelab-pro-sWOvgOOFk1g-unsplash.jpg)
