@@ -8,7 +8,8 @@ module.exports = {
         'navbar-mobile',
         'single-blog',
         'list-blog',
-        'list-tag'
+        'list-tag',
+        'blockquote'
       ]
     },
     autoprefixer: {},
