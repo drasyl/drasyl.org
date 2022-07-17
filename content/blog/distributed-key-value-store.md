@@ -2,7 +2,6 @@
 title: "Distributed Key-Value Stores Built with drasyl"
 date: 2022-03-03T00:00:00Z
 tags: ["teaching", "use case"]
-draft: true
 ---
 
 ![macbook pro displaying group of people](/img/chris-montgomery-smgTvepind4-unsplash.jpg)
