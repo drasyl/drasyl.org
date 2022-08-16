@@ -1,0 +1,57 @@
+@import 'variables';
+
+@import 'general';
+@import 'header';
+@import 'nav';
+@import 'hero';
+@import 'sections';
+@import 'footer';
+@import 'fonts';
+
+html {
+  background: #373737;
+}
+
+#particles-js canvas {
+  background-color: darken($primary, 11);
+  position: absolute;
+  width: auto;
+  height: 100vh;
+  min-height: 700px;
+  z-index: 0;
+}
+
+.unselectable {
+  -webkit-user-select: none; 
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.single-blog,
+.list-blog,
+.list-tag {
+  img {
+    max-width: 100%;   
+  }
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #ccc;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  font-style: italic;
+}
+blockquote:before {
+  color: #ccc;
+  content: open-quote;
+  font-size: 3em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p:first-child {
+  display: inline;
+}
