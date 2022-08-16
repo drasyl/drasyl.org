@@ -10,6 +10,8 @@ drasyl is now also available on [GitHub](https://github.com/drasyl-overlay/drasy
 We will release all future drasyl versions on that page.
 While we maintainers still use the [GitLab Repository](https://git.informatik.uni-hamburg.de/sane-public/drasyl) for development, we're open to contributions on GitHub.
 
+<!--more-->
+
 ---
 
 Photo by [Roman Synkevych](https://unsplash.com/@synkevych) on [Unsplash](https://unsplash.com/)
