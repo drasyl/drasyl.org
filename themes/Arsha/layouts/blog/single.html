@@ -15,8 +15,14 @@
 							</ol>
 							<h2>{{ .Title }}</h2>
 							<div>
-								On {{ .Date | time.Format ":date_long" }}
+								On <time>{{ .Date | time.Format ":date_long" }}</time>
 								{{ range $index, $value := .Params.tags }}{{ if ne $index 0 }},{{else}} in{{ end }} <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ .| humanize | title }}</a>{{ end }}
+								 · 
+								{{ if gt .ReadingTime 1 }}
+								    {{ .ReadingTime }} min read
+								{{ else }}
+								    One min read
+								{{ end }}
 							</div>
 						</div>
 					</div>
