@@ -11,7 +11,11 @@
 						{{ if eq .Section "tags" }}<li>Tags</li>{{ end }}
 						<li></li>
 					</ol>
+					{{ if eq .Section "tags" }}
+						<h2>Tag: {{ .Title | humanize | title }}</h2>
+					{{ else }}
 					<h2>{{ .Title }}</h2>
+					{{ end }}
 				</div>
 			</section>
 			<section class="inner-page">
