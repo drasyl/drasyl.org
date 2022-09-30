@@ -1,6 +1,6 @@
 ---
 title: "Python Package"
-date: 2022-09-22T11:15:00+02:00
+date: 2022-09-30T21:17:00+02:00
 tags: ["python"]
 images: ["img/david-clode-oJlt2XBWuWs-unsplash.jpg"]
 ---
