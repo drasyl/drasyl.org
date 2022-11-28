@@ -9,7 +9,7 @@ images: ["img/alfons-morales-YLSwjSy7stw-unsplash.jpg"]
 
 We are excited to announce our blazing fast and native version of DrasylNode as a shared C library. This was achieved by translating Java code with the required JDK runtime elements into native code using the [GraalVM](#about-native-image).
 <!--more-->
-The source code can be found, as always, at [GitHub](https://github.com/drasyl-overlay/drasyl/tree/master/drasyl-shared-library) together with build instructions. 
+The source code can be found, as always, at [GitHub](https://github.com/drasyl/drasyl/tree/master/drasyl-shared-library) together with build instructions. 
 
 ## About Native Image
 
@@ -34,7 +34,7 @@ We will also provide pre-compiled versions for the following architectures in th
 - Windows
     - x64
 
-For the ones that can't wait until the next release, pre-compiled versions exist as artifacts of the [`Build Shared Library` GitHub action](https://github.com/drasyl-overlay/drasyl/actions/workflows/build-shared-library.yml).
+For the ones that can't wait until the next release, pre-compiled versions exist as artifacts of the [`Build Shared Library` GitHub action](https://github.com/drasyl/drasyl/actions/workflows/build-shared-library.yml).
 
 ---
 

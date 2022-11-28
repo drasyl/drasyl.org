@@ -14,7 +14,7 @@ Therefore, it provides a very comfortable way to install/update the [drasyl CLI]
 
 To install drasyl via Homebrew, you need this command:
 ```bash
-brew install drasyl-overlay/tap/drasyl
+brew install drasyl/tap/drasyl
 ```
 
 After installation is completed, the `drasyl` command should be available.
