@@ -7,9 +7,12 @@ draft: false
 
 ### Information according to § 5 TMG
 
-Kevin Röbert  
+Kevin Röbert<br/>
+c/o COCENTER<br/>
+Koppoldstr. 1<br/>
+86551 Aichach   
 
-E-Mail: drasyl (at) depesche.eu
+E-Mail: info (at) drasyl.org
 
 #### Liability for contents
 
@@ -93,9 +96,12 @@ In this data protection declaration, we use, inter alia, the following terms:
 
 Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:
 
-Kevin Röbert
+Kevin Röbert<br/>
+c/o COCENTER<br/>
+Koppoldstr. 1<br/>
+86551 Aichach  
 
-Email: drasy (at) depesche.eu
+Email: info (at) drasyl.org
 
 Website: drasyl.org
 
