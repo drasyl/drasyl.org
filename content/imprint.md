@@ -5,12 +5,7 @@ date: 2021-02-04T00:10:00+01:00
 draft: false
 ---
 
-### Information according to § 5 TMG
-
-Kevin Röbert<br/>
-c/o COCENTER<br/>
-Koppoldstr. 1<br/>
-86551 Aichach   
+### Contact
 
 E-Mail: info (at) drasyl.org
 
@@ -92,18 +87,9 @@ In this data protection declaration, we use, inter alia, the following terms:
 
     Consent of the data subject is any freely given, specific, informed and unambiguous indication of the data subject's wishes by which he or she, by a statement or by a clear affirmative action, signifies agreement to the processing of personal data relating to him or her.
 
-#### 2\. Name and Address of the controller
-
-Controller for the purposes of the General Data Protection Regulation (GDPR), other data protection laws applicable in Member states of the European Union and other provisions related to data protection is:
-
-Kevin Röbert<br/>
-c/o COCENTER<br/>
-Koppoldstr. 1<br/>
-86551 Aichach  
+#### 2\. Contact of the controller
 
 Email: info (at) drasyl.org
-
-Website: drasyl.org
 
 #### 3\. Collection of general data and information
 
