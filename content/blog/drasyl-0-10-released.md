@@ -3,7 +3,6 @@ title: "drasyl 0.10.0 released with performance improvements, Fixes, and globall
 date: 2022-10-03T11:34:45+02:00
 tags: ["releases"]
 images: ["img/nasa-Q1p7bh3SHj8-unsplash.jpg"]
-draft: true
 ---
 
 ![](/img/nasa-Q1p7bh3SHj8-unsplash.jpg)
