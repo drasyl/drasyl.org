@@ -17,7 +17,7 @@ This maintenance release brings performance improvements and a new set of global
 #### 🚀 Added
 
 - `DrasylConfig.newBuilder()` will now validate serialization bindings.
-- CLI: Option `--no-application-armin` to sub-command `tun` added.
+- CLI: Option `--no-application-arming` to sub-command `tun` added.
 - Boolean system property `org.drasyl.nonce.pseudorandom` added which can be used to use cheaper nonces using pseudorandom source (should not be used in production environments).
 
 #### 💅 Changed
