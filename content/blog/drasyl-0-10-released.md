@@ -1,5 +1,5 @@
 ---
-title: "drasyl 0.10.0 released with performance improvements, Fixes, and globally distributed super peers"
+title: "drasyl 0.10.0 released with performance improvements, fixes, and globally distributed super peers"
 date: 2023-01-31T20:27:00+02:00
 tags: ["releases"]
 images: ["img/nasa-Q1p7bh3SHj8-unsplash.jpg"]
