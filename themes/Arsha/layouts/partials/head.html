@@ -21,7 +21,7 @@
   <!-- <link href="{{ "vendor/swiper/swiper-bundle.min.css" | relURL }}" rel="stylesheet"> -->
   <!-- Template Main CSS File -->
   {{ $style := resources.Get "scss/style.scss" }}
-  <link href="{{ ($style | resources.ToCSS | postCSS | minify | fingerprint).RelPermalink }}" rel="stylesheet">
+  <link href="{{ ($style | css.Sass | postCSS | minify | fingerprint).RelPermalink }}" rel="stylesheet">
   <!-- =======================================================
   * Template Name: Arsha - v4.7.0
   * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
