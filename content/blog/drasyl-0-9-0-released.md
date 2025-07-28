@@ -17,24 +17,24 @@ In addition, drasyl now ships with optional components allowing you to utilize t
 #### 🚀 Added
 
 - It is now easier to create drasyl node through the bootstrap interface.
-  Refer [our documentation](https://docs.drasyl.org/advanced-usage/bootstrapping/) for more
+  Refer [our documentation](https://docs.java.drasyl.org/advanced-usage/bootstrapping/) for more
   information.
 - Added support for remote message invocations over drasyl.
-  Refer [our documentation](https://docs.drasyl.org/advanced-usage/remote-message-invocation/)
+  Refer [our documentation](https://docs.java.drasyl.org/advanced-usage/remote-message-invocation/)
   for more information.
 - Added support for decentralized membership managed using the CYCLON protocol.
-  Refer [our documentation](https://docs.drasyl.org/advanced-usage/membership-management/) for
+  Refer [our documentation](https://docs.java.drasyl.org/advanced-usage/membership-management/) for
   more information.
 - Added support for the publish/subscribe messaging pattern.
-  Refer [our documentation](https://docs.drasyl.org/advanced-usage/publish-subscribe/) for
+  Refer [our documentation](https://docs.java.drasyl.org/advanced-usage/publish-subscribe/) for
   more information.
 - Added support for distributed lookup service using the Chord protocol.
-  Refer [our documentation](https://docs.drasyl.org/advanced-usage/distributed-lookup/) for
+  Refer [our documentation](https://docs.java.drasyl.org/advanced-usage/distributed-lookup/) for
   more information.
 - Created shared C library `libdrasyl` for the `DrasylNode` interface.
-  Refer [our documentation](https://docs.drasyl.org/language-bindings/c) for
+  Refer [our documentation](https://docs.java.drasyl.org/language-bindings/c) for
   more information.
-- Created Python binding `drasyl` for the shared C library. Can be installed through [PyPI](https://pypi.org/project/drasyl/). Refer [our documentation](https://docs.drasyl.org/language-bindings/python) for
+- Created Python binding `drasyl` for the shared C library. Can be installed through [PyPI](https://pypi.org/project/drasyl/). Refer [our documentation](https://docs.java.drasyl.org/language-bindings/python) for
   more information.
 
 #### 💅 Changed
@@ -62,11 +62,11 @@ As a solution for these users, we could only refer to our JSON-RPC interface, wh
 
 Starting with this release, we now provide a completely native implementation of the `DrasylNode` interface in C. This is not a separate implementation but an ahead-of-time compilation to native code of our Java code. Technical details can be found in the [GraalVM documentation](https://www.graalvm.org/dev/reference-manual/native-image/guides/build-native-shared-library/).
 
-You can see from our [Documentation](https://docs.drasyl.org/language-bindings/c) how to use `libdrasyl`.
+You can see from our [Documentation](https://docs.java.drasyl.org/language-bindings/c) how to use `libdrasyl`.
 
 Since many programming languages support binding to C functions, we can now more easily bring drasyl to other programming languages. We start with our Python package `drasyl`, which you can download directly via `pip install drasyl` from the Python Package Index.
 
-Refer to our [Documentation](https://docs.drasyl.org/language-bindings/python) for more information about using this Python package.
+Refer to our [Documentation](https://docs.java.drasyl.org/language-bindings/python) for more information about using this Python package.
 
 ### Publish/Subscribe Messaging, Remote Message Invocation, and more!
 
@@ -75,7 +75,7 @@ While this has already addressed many challenges, message-based communication on
 Typically, p2p applications need to utilize higher-level services like membership management, resource discovery, services, or one-to-many communication.
 For the most common requirements, we would like to provide building blocks from which you can choose to build your distributed application.
 
-Starting with this release, drasyl now provides support for the [publish/subscribe messaging pattern](https://docs.drasyl.org/advanced-usage/publish-subscribe), [remote message invocation](https://docs.drasyl.org/advanced-usage/remote-message-invocation), [decentralized membership management using the CYCLON protocol](https://docs.drasyl.org/advanced-usage/membership-management), support for publishing/subscribe messaging pattern, and a [distributed lookup service using the Chord protocol](https://docs.drasyl.org/advanced-usage/distributed-lookup).
+Starting with this release, drasyl now provides support for the [publish/subscribe messaging pattern](https://docs.java.drasyl.org/advanced-usage/publish-subscribe), [remote message invocation](https://docs.java.drasyl.org/advanced-usage/remote-message-invocation), [decentralized membership management using the CYCLON protocol](https://docs.java.drasyl.org/advanced-usage/membership-management), support for publishing/subscribe messaging pattern, and a [distributed lookup service using the Chord protocol](https://docs.java.drasyl.org/advanced-usage/distributed-lookup).
 
 ---
 

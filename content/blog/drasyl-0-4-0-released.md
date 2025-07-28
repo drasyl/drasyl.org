@@ -46,9 +46,9 @@ Today, we are excited to announce the release of drasyl 0.4.0 with UPD hole punc
 - The entire protocol for constructing the overlay network has been revised (it's far better now!).
 - Messages are now serialized in binary. This is faster and creates smaller messages on the wire.
 - If possible, messages are processed using zero-copy.
-- Documentation has been revised (Javadoc and/or documentation at https://docs.drasyl.org).
+- Documentation has been revised (Javadoc and/or documentation at https://docs.java.drasyl.org).
 - Messages can now be additionally serialized by protobuf or Java. Furthermore, own serializers can
-  be implemented. Read more at https://docs.drasyl.org.
+  be implemented. Read more at https://docs.java.drasyl.org.
 - The third-party portmapper library has been replaced with our own more lightweight 
   and more resilient implementation.
 - All dependencies have been updated to the latest versions.

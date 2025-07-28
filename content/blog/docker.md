@@ -7,7 +7,7 @@ images: ["img/timelab-pro-sWOvgOOFk1g-unsplash.jpg"]
 
 ![Lot of cargo freight containers in the Hong Kong sea port](/img/timelab-pro-sWOvgOOFk1g-unsplash.jpg)
 
-The [drasyl CLI](https://docs.drasyl.org/cli/) can now be used within a Docker Container.
+The [drasyl CLI](https://docs.java.drasyl.org/cli/) can now be used within a Docker Container.
 To do so, we've uploaded the [current release on Docker Hub](https://hub.docker.com/repository/docker/drasyl/drasyl).
 
 <!--more-->

@@ -40,7 +40,7 @@ They also relay messages if a direct connection is not possible.
 Up to now, two super seers in our home country -- Germany -- have been used for this: One in Frankfurt and another in Nüremberg.
 Therefore, users from Germany benefited from fast peer discovery, connection establishment, and message relaying.
 For users in other, geographically more distant regions, the latency was higher and these processes generellay took longer.
-Starting with version 0.10, we have now [increased the number of super peers to four](https://docs.drasyl.org/public-super-peers) and also distributed them more globally.
+Starting with version 0.10, we have now [increased the number of super peers to four](https://docs.java.drasyl.org/public-super-peers) and also distributed them more globally.
 The new super peers are located in New York City; Logroño, Spain; Baden-Baden, Germany; and Singapore.
 Since drasyl automatically prefers the closest super peer, more users now benefit from faster super peer connections.
 

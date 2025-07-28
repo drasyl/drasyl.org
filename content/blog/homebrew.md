@@ -8,7 +8,7 @@ images: ["img/martin-knize-DQpHtE5WY-U-unsplash.jpg"]
 ![Copper alcohol distillery](/img/martin-knize-DQpHtE5WY-U-unsplash.jpg)
 
 [Homebrew](https://brew.sh/) is "The Missing Package Manager for macOS (or Linux)".
-Therefore, it provides a very comfortable way to install/update the [drasyl CLI](https://docs.drasyl.org/cli/).
+Therefore, it provides a very comfortable way to install/update the [drasyl CLI](https://docs.java.drasyl.org/cli/).
 
 <!--more-->
 
