@@ -1,6 +1,6 @@
 baseURL = 'https://drasyl.org/'
 languageCode = 'en-us'
-title = 'drasyl is a high-performance framework for rapid development of distributed applications'
+title = 'drasyl provides secure, software-defined overlay networks, connecting all your devices'
 theme = 'Arsha'
 disableKinds = ['taxonomyTerm']
 pluralizeListTitles = false
