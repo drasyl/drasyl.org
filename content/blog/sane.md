@@ -3,9 +3,8 @@ title: "Smart Urban Data Space for Citizen Science"
 date: 2021-10-08T00:00:00+01:00
 tags: ["research", "use case"]
 images: ["img/sane_logo.png"]
+author: "Heiko Bornholdt"
 ---
-
-![SANE logo](/img/sane_logo.png)
 
 Today we are talking about another use case for drasyl: [SANE](https://sane.city). This use case is special for us because it finally made us decide to develop drasyl. The SANE project is now finished; therefore, we would like to present the project's results.
 

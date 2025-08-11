@@ -3,9 +3,8 @@ title: "Bringing Computation Offloading to the Edge"
 date: 2022-02-03T15:06:00+01:00
 tags: ["theses", "research", "use case"]
 images: ["img/jake-ingle-s-t1oJXKYI4-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Feet dangling from a building](/img/jake-ingle-s-t1oJXKYI4-unsplash.jpg)
 
 Today's post is about the master thesis "A Secure Context-Aware Middleware for Computation Offloading in Untrustworthy, Open, and Dynamic Edge Environments" by Kevin Röbert.
 In his master's thesis, Kevin Röbert designed, implemented, and evaluated a system capable of offloading computations to the cloud, grid, and edge devices.

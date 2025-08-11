@@ -3,9 +3,8 @@ title: "drasyl 0.4.0 released with UDP Hole Punching, Message Chunking, and Band
 date: 2021-02-27T22:13:00+01:00
 tags: ["releases", "cli"]
 images: ["img/dan-burton-nRW4I8kuyd8-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![person holding fist to camera](/img/dan-burton-nRW4I8kuyd8-unsplash.jpg)
 
 Today, we are excited to announce the release of drasyl 0.4.0 with UPD hole punching, message chunking, in-process discovery, static routes, and network bandwidth measurement utility.
 

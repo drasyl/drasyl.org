@@ -3,9 +3,8 @@ title: "Software-Defined Overlay Networking for the Deployment of Distributed Ap
 date: 2025-02-04T19:33:26+01:00
 tags: ["theses", "research", "use case", "publication"]
 images: ["img/suad-kamardeen-ItFTJoh1A8c-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![Black pendant lamp photo](/img/suad-kamardeen-ItFTJoh1A8c-unsplash.jpg)
 
 We are pleased to announce that Heiko Bornholdt's dissertation, *"Software-Defined Overlay Networking for the Deployment of Distributed Applications at the Edge"*, has been published.  
 

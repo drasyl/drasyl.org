@@ -2,9 +2,9 @@
 title: "drasyl 0.9.0 released with C and Python Bindings and support for Publish/Subscribe Messaging, Remote Message Invocation, and more!"
 date: 2022-10-03T11:34:45+02:00
 tags: ["releases"]
+author: "Kevin Röbert"
+images: ["img/pexels-alexander-grey-1148496.jpg"]
 ---
-
-![Assorted color bricks](/img/pexels-alexander-grey-1148496.jpg)
 
 Today, we are excited to announce the release of drasyl 0.9.0.
 This release will bring drasyl natively to C and Python!

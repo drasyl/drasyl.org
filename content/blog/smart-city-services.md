@@ -3,9 +3,8 @@ title: "Accessing Smart City Services in Untrustworthy Environments via Decentra
 date: 2021-10-15T00:00:00
 tags: ["publication", "research","use case"]
 images: ["img/denys-nevozhai-_QoAuZGAoPY-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Cityscape and interchange](/img/denys-nevozhai-_QoAuZGAoPY-unsplash.jpg)
 
 We're happy to announce that our paper "Accessing Smart City Services in Untrustworthy Environments via Decentralized Privacy-Preserving Overlay Networks" has been published in the proceedings of the 2021 IEEE International Conference on Service-Oriented System Engineering (SOSE)".
 Within this paper, we presented how our approach can be used to provide the foundations for a network of Smart City Services.

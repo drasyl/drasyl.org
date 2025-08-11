@@ -2,9 +2,8 @@
 title: "New Documentation Website Online"
 date: 2020-09-17T05:09:00+01:00
 images: ["img/maksym-kaharlytskyi-Q9y3LRuuxmg-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![file cabinet photo](/img/maksym-kaharlytskyi-Q9y3LRuuxmg-unsplash.jpg)
 
 Since our first release, we have provided documentation for drasyl, [which is located within the Git repository](https://git.informatik.uni-hamburg.de/sane-public/drasyl/-/tree/master/docs).
 Today, we have started providing a dedicated website with our documentation, with the help of [MkDocs](https://www.mkdocs.org/), additionally at [https://docs.java.drasyl.org](https://docs.java.drasyl.org).

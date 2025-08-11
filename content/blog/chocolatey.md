@@ -3,9 +3,8 @@ title: "For our Windows User(s): Install drasyl CLI via Chocolatey"
 date: 2021-03-13T00:00:00Z
 tags: ["cli"]
 images: ["img/charisse-kenion-tWe8ib-cnXY-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![chopped chocolate photo](/img/charisse-kenion-tWe8ib-cnXY-unsplash.jpg)
 
 Following our [last year's announcement of bringing drasyl to Homebrew for Linux and macOS users](/blog/homebrew/), we're now [bringing drasyl to Chocolatey](https://community.chocolatey.org/packages/drasyl).
 

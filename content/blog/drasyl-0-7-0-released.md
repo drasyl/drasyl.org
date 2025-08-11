@@ -3,9 +3,8 @@ title: "drasyl 0.7.0 released with TUN Device Support and Faster UDP Hole Punchi
 date: 2022-02-18T12:14:00+01:00
 tags: ["releases", "cli"]
 images: ["img/clint-adair-BW0vK-FA3eg-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Green rope meshwork](/img/clint-adair-BW0vK-FA3eg-unsplash.jpg)
 
 Today, we are excited to announce the release of drasyl 0.7.0 with TUN device support, faster UDP hole punching, IP broadcast-based peer discovery, and identity generation utility.
 

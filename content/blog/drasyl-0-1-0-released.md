@@ -3,9 +3,8 @@ title: "drasyl 0.1.0 released - The Journey Begins!"
 date: 2020-07-10T15:36:00+01:00
 tags: ["releases", "teaching"]
 images: ["img/matt-duncan-IUY_3DvM__w-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![Highway 212 forest road](/img/matt-duncan-IUY_3DvM__w-unsplash.jpg)
 
 Today, we are excited to announce the very first release of drasyl 0.1.0.
 drasyl is an open-source, general-purpose overlay network that is concurrent, resilient, flexible, and automated. It presents itself to the user as a transparent system that offers suitable discovery and awareness methods, mainly focusing on smart city and IoT devices.

@@ -3,9 +3,8 @@ title: "drasyl: From Peer-to-Peer Library to Software-Defined Networking Platfor
 date: 2025-08-10T23:44:16+02:00
 tags: ["Releases", "SDN", "P2P", "Rust", "Java", "Research", "Use Case"]
 images: ["img/suzanne-d-williams-VMKBFR6r_jg-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Feet dangling from a building](/img/suzanne-d-williams-VMKBFR6r_jg-unsplash.jpg)
 
 
 ## Origins and Motivation
@@ -30,7 +29,7 @@ Looking back, high-performance networking on the JVM is possible, but it demands
 
 ## A Fresh Start in Rust
 
-After completing my (Heikos) [dissertation](https://drasyl.org/blog/drasyl-dissertation-published/), we decided to rebuild drasyl on a foundation more suited to an SDN platform. The programming language Rust was chosen for its combination of C/C++-level performance and control with strict memory and thread safety, achieved without a garbage collector. This combination enables the efficient development of high-performance, reliable networking applications while retaining portability and avoiding JVM-specific tuning.
+After completing my [dissertation](https://drasyl.org/blog/drasyl-dissertation-published/), we decided to rebuild drasyl on a foundation more suited to an SDN platform. The programming language Rust was chosen for its combination of C/C++-level performance and control with strict memory and thread safety, achieved without a garbage collector. This combination enables the efficient development of high-performance, reliable networking applications while retaining portability and avoiding JVM-specific tuning.
 
 This was not a direct port. We reengineered every component, including the P2P protocol and SDN management, while ensuring compatibility with the Java library. Development of the Rust-based implementation is publicly available at [github.com/drasyl/drasyl-rs](https://github.com/drasyl/drasyl-rs).
 

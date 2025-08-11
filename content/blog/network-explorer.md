@@ -3,9 +3,8 @@ title: "drasyl Network Explorer launched"
 date: 2021-09-04T03:29:00+01:00
 tags: []
 images: ["img/network-explorer.png"]
+author: "Heiko Bornholdt"
 ---
-
-![Screenshot of drasyl.network](/img/network-explorer.png)
 
 Starting today, we launched the website [drasyl.network](https://drasyl.network), where you can explore all the nodes that are currently connected to one of [our public super-peers](https://docs.java.drasyl.org/public-super-peers/).
 <!--more--->

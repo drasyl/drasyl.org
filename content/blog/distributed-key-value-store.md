@@ -3,9 +3,8 @@ title: "Distributed Key-Value Stores Built with drasyl"
 date: 2022-03-03T00:00:00Z
 tags: ["teaching", "use case"]
 images: ["img/chris-montgomery-smgTvepind4-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![macbook pro displaying group of people](/img/chris-montgomery-smgTvepind4-unsplash.jpg)
 
 This post presents another use case of drasyl:
 During an [eight-day block course at the university](https://vsis-www.informatik.uni-hamburg.de/vsis/teaching/coursekvv/528), a total of five student groups designed and prototyped key-value stores.

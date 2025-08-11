@@ -1,76 +1,163 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 	{{ partial "head.html" . }}
-	<body class="list list-{{ .Type | singularize }}">
+	<body class="blog-page list list-{{ .Type | singularize }}">
 		{{ partial "header.html" . }}
-		<main id="main">
-			<section id="breadcrumbs" class="breadcrumbs">
+		<main class="main">
+
+			<!-- Page Title -->
+			<div class="page-title" data-aos="fade">
 				<div class="container">
-					<ol>
-						<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-						{{ if eq .Section "tags" }}<li>Tags</li>{{ end }}
-						<li></li>
-					</ol>
+					<nav class="breadcrumbs">
+						<ol>
+							<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+							{{ if eq .Section "tags" }}
+								<li><a href="{{ "tags" | relURL }}">Tags</a></li>
+								<li class="current">{{ .Title | humanize | title }}</li>
+							{{ else }}
+								<li class="current">Blog</li>
+							{{ end }}
+						</ol>
+					</nav>
 					{{ if eq .Section "tags" }}
-						<h2>Tag: {{ .Title | humanize | title }}</h2>
+						<h1>Tag: {{ .Title | humanize | title }}</h1>
 					{{ else }}
-						<h2>{{ .Title }}</h2>
+						<h1>Blog</h1>
 					{{ end }}
 				</div>
-			</section>
-			<section class="inner-page">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-8 col-lg-12" style="margin-bottom: 20px">
-							{{ range $index, $value := .Pages }}
-								{{ if ne $index 0 }}
-									<hr style="margin: 40px 0;" />
+			</div><!-- End Page Title -->
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-8">
+
+						<!-- Blog Posts Section -->
+						<section id="blog-posts" class="blog-posts section">
+
+							<div class="container" data-aos="fade-up" data-aos-delay="100">
+
+								<div class="row gy-4">
+
+									{{ range .Pages }}
+									<div class="col-lg-6">
+										<article>
+
+											{{ if .Params.images }}
+											<div class="post-img">
+												<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="img-fluid">
+											</div>
+											{{ end }}
+
+											<h2 class="title">
+												<a href="{{ .RelPermalink }}">{{ .Title }}</a>
+											</h2>
+
+											<div class="meta-top">
+												<ul>
+													{{ if .Params.author }}
+													<li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{ .RelPermalink }}">{{ .Params.author }}</a></li>
+													{{ end }}
+													<li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{ .RelPermalink }}"><time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time></a></li>
+													{{ if .Params.comments }}
+													<li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a href="{{ .RelPermalink }}">{{ .Params.comments }} Comments</a></li>
+													{{ end }}
+												</ul>
+											</div>
+
+											<div class="content">
+												<p>
+													{{ .Summary | plainify | truncate 200 }}
+												</p>
+
+												<div class="read-more">
+													<a href="{{ .RelPermalink }}">Read More</a>
+												</div>
+											</div>
+
+										</article>
+									</div><!-- End post list item -->
+									{{ end }}
+
+								</div><!-- End blog posts list -->
+
+							</div>
+
+						</section><!-- /Blog Posts Section -->
+
+						<!-- Pagination Section -->
+						{{ if gt (len .Pages) 0 }}
+						<section id="pagination" class="pagination-2 section">
+							<div class="container">
+								<div class="d-flex justify-content-center">
+									{{ template "_internal/pagination.html" . }}
+								</div>
+							</div>
+						</section><!-- /Pagination Section -->
+						{{ end }}
+
+					</div>
+
+					<div class="col-lg-4 sidebar">
+
+						<div class="widgets-container" data-aos="fade-up" data-aos-delay="200">
+
+							<!-- Recent Posts Widget -->
+							<div class="recent-posts-widget widget-item">
+
+								<h3 class="widget-title">Recent Posts</h3>
+
+								{{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+								<div class="post-item">
+									{{ if .Params.images }}
+									<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="flex-shrink-0">
+									{{ end }}
+									<div>
+										<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+										<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+									</div>
+								</div><!-- End recent post item-->
 								{{ end }}
 
-								<div>					    		
-									<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-									<p>
-										On <time>{{ .Date | time.Format ":date_long" }}</time>
-										{{ range $index, $value := .Params.tags }}{{ if ne $index 0 }},{{else}} in{{ end }} <a href="/tags/{{ . | urlize }}">{{ . | humanize | title }}</a>{{ end }}
-										 · 
-										{{ if gt .ReadingTime 1 }}
-										    {{ .ReadingTime }} min read
-										{{ else }}
-										    One min read
-										{{ end }}
-									</p>
-									<div>
-										{{ .Summary }}
-									</div>
-									<div>
-										<a href="{{ .Permalink }}">Read more →</a>
-									</div>
-								</div>
-							{{ end }}
+							</div><!--/Recent Posts Widget -->
+
+							<!-- Tags Widget -->
+							<div class="tags-widget widget-item">
+
+								<h3 class="widget-title">Tags</h3>
+								<ul>
+									{{ range .Site.Taxonomies.tags }}
+									<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+									{{ end }}
+								</ul>
+
+							</div><!--/Tags Widget -->
+
 						</div>
-						<div class="col-xl-1"></div>
-						<div class="col-xl-3 col-lg-12">
-							<h4>Recent Posts</h4>
-					        <ul class="list-group list-group-flush" style="margin-bottom: 20px">
-					        	{{ range (where site.RegularPages "Section" "blog" | first 5) }}
-					        		<li class="list-group-item">
-					        			<a href="{{ .Permalink }}">{{ .Title }}</a>
-					        		</li>
-					        	{{ end }}
-							</ul>
-							<h4>Tags</h4>
-					        <ul class="list-group list-group-flush">
-					        	{{ range $name, $items := .Site.Taxonomies.tags }}
-					        		<li class="list-group-item">
-					        			<a href="{{ $.Site.BaseURL }}tags/{{ $name | urlize }}">{{ $name | humanize | title }} ({{ len $items }})</a>
-					        		</li>
-					        	{{ end }}
-							</ul>
-						</div>
+
 					</div>
+
 				</div>
-			</section>
+			</div>
+
 		</main>
 		{{ partial "footer.html" . }}
+
+		<!-- Scroll Top -->
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+		<!-- Vendor JS Files -->
+		<script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
+		<!--  <script src="assets/vendor/php-email-form/validate.js"></script>-->
+		<script src="{{ "vendor/aos/aos.js" | relURL }}"></script>
+		<!--  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+		<!--  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+		<!--  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
+		<!--  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
+		<!--  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+
+		<!-- Main JS File -->
+		{{ $script := resources.Get "js/main.js" }}
+		<script src="{{ ($script | minify | fingerprint).RelPermalink}}"></script>
 	</body>
 </html>

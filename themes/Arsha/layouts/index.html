@@ -1,16 +1,40 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
-  <body>
-    <div id="particles-js"></div>
+  <body class="index-page">
+  <div id="particles-js" class="dark-background"></div>
     {{ partial "header.html" . }}
-    {{ partial "hero.html" . }}
-    <main id="main">
+    <main class="main">
+      {{ partial "hero.html" . }}
       {{ partial "about.html" . }}
-      {{ partial "projects.html" . }}
+      {{ partial "use-cases.html" . }}
+      {{ partial "architecture.html" . }}
+      {{ partial "in-action.html" . }}
       {{ partial "publications.html" . }}
       {{ partial "team.html" . }}
+      {{ partial "recent-blog-postst.html" . }}
     </main>
+
     {{ partial "footer.html" . }}
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
+  <!--  <script src="assets/vendor/php-email-form/validate.js"></script>-->
+    <script src="{{ "vendor/aos/aos.js" | relURL }}"></script>
+  <!--  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+  <!--  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+  <!--  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
+  <!--  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
+  <!--  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+    <script src="{{ "vendor/particles/particles.min.js" | relURL }}"></script>
+
+    <!-- Main JS File -->
+    {{ $script := resources.Get "js/main.js" }}
+    <script src="{{ ($script | minify | fingerprint).RelPermalink}}"></script>
+    {{ $script2 := resources.Get "js/particles.js" }}
+    <script src="{{ ($script2 | minify | fingerprint).RelPermalink}}"></script>
   </body>
 </html>

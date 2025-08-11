@@ -3,9 +3,8 @@ title: "drasyl 0.10.0 released with performance improvements, fixes, and globall
 date: 2023-01-31T20:27:00+02:00
 tags: ["releases"]
 images: ["img/nasa-Q1p7bh3SHj8-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![](/img/nasa-Q1p7bh3SHj8-unsplash.jpg)
 
 Today, we are excited to announce the release of drasyl 0.10.0.
 This maintenance release brings performance improvements and a new set of globally distributed super peers resulting in faster peer discovery, connection establishments, and traffic relaying performance.

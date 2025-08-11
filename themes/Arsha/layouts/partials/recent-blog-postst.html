@@ -1,0 +1,53 @@
+        <!-- Recent Blog Postst Section -->
+    <section id="recent-blog-postst" class="recent-blog-postst section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Recent Blog Posts</h2>
+        <p>Stay updated with the latest drasyl news and developments. Visit our <a href="{{ ("/blog" | safeHTML) }}">blog</a> for more.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-5">
+
+          {{ range $index, $post := first 3 (where .Site.RegularPages "Section" "blog") }}
+          <div class="col-xl-4 col-md-6">
+            <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="{{ mul (add $index 1) 100 }}">
+
+              <div class="post-img position-relative overflow-hidden">
+                {{ if .Params.images }}
+                <img src="/{{ index .Params.images 0 }}" class="img-fluid" alt="{{ .Title }}">
+                {{ else if .Params.image }}
+                <img src="{{ .Params.image }}" class="img-fluid" alt="{{ .Title }}">
+                {{ else }}
+                <img src="/img/pexels-thisisengineering-3861943.jpg" class="img-fluid" alt="{{ .Title }}">
+                {{ end }}
+                <span class="post-date">{{ .Date.Format "January 2" }}</span>
+              </div>
+
+              <div class="post-content d-flex flex-column">
+
+                <h3 class="post-title" style="min-height: 3.6em;">{{ .Title }}</h3>
+
+                <div class="meta d-flex align-items-center">
+                  <div class="d-flex align-items-center">
+                    <i class="bi bi-person"></i> <span class="ps-2">{{ .Params.author }}</span>
+                  </div>
+                </div>
+
+                <hr>
+
+                <a href="{{ .RelPermalink }}" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+              </div>
+
+            </div>
+          </div><!-- End post item -->
+          {{ end }}
+
+        </div>
+
+      </div>
+
+    </section><!-- /Recent Blog Postst Section -->

@@ -3,9 +3,8 @@ title: "Announcing drasyl 0.12.0: A New Core, Rewritten in Rust"
 date: 2025-06-10T21:25:26+02:00
 tags: ["releases"]
 images: ["img/derailed-drips-Q5cT8yw7V3Q-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![](/img/derailed-drips-Q5cT8yw7V3Q-unsplash.jpg)
 
 We are excited to announce the release of **drasyl 0.12.0**. In addition to several bug fixes and dependency updates, this version brings a fundamental transformation:
 **The core of the drasyl peer-to-peer network has been completely re-engineered.**

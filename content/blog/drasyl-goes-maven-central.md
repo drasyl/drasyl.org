@@ -2,6 +2,7 @@
 title: "drasyl goes Maven Central"
 date: 2020-07-14T02:38:00+02:00
 tags: ["releases"]
+author: "Kevin Röbert"
 ---
 
 Today we are releasing drasyl 0.1.2.

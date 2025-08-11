@@ -3,9 +3,8 @@ title: "Outdoor Navigation for Wheelchair Users"
 date: 2022-07-14T14:30:00+02:00
 tags: ["teaching", "use case"]
 images: ["img/nayeli-dalton-GIJWGUXKEzY-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![woman in wheelchair](/img/nayeli-dalton-GIJWGUXKEzY-unsplash.jpg)
 
 Today's post is about the just finished [master project lecture about smart cities](https://www.inf.uni-hamburg.de/en/inst/ab/dos/teaching.html#27562742) at Universität Hamburg.
 The project's goal was the prototypical implementation of a navigation solution for wheelchair users.

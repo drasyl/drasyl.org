@@ -3,9 +3,8 @@ title: "SkABNet: A Attribut-Based SkipNet built on drasyl"
 date: 2021-06-14T10:00:00+01:00
 tags: ["research", "software", "use case"]
 images: ["img/skabnet_logo.png"]
+author: "Heiko Bornholdt"
 ---
-
-![SkABNet logo](/img/skabnet_logo.png)
 
 Today we would like to present you another use case of drasyl: A colleague of ours developed a distributed data structure based on the [SkipNet](https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tr-2002-92.pdf) presented by Microsoft. In addition to that, he added capabilities to store multi-attributed data on a SkipNet.
 <!--more-->

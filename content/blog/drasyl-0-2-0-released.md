@@ -3,9 +3,8 @@ title: "drasyl 0.2.0 released with Plugin Support, Message Marshaling, and a Wor
 date: 2020-09-16T00:01:00+01:00
 tags: ["releases", "cli"]
 images: ["img/wormhole-g4db043e5d_1920.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![wormhole](/img/wormhole-g4db043e5d_1920.jpg)
 
 Today, we are excited to announce the release of drasyl 0.2.0 with plugin support, message marshaling, port forwarding, a filesystem-based peer discovery, and an ominous wormhole 🕳️.
 

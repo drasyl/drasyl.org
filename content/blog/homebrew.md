@@ -3,9 +3,8 @@ title: "Install drasyl CLI via Homebrew"
 date: 2020-11-20T16:43:00Z
 tags: ["cli"]
 images: ["img/martin-knize-DQpHtE5WY-U-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![Copper alcohol distillery](/img/martin-knize-DQpHtE5WY-U-unsplash.jpg)
 
 [Homebrew](https://brew.sh/) is "The Missing Package Manager for macOS (or Linux)".
 Therefore, it provides a very comfortable way to install/update the [drasyl CLI](https://docs.java.drasyl.org/cli/).

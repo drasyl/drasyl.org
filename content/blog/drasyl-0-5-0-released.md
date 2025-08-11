@@ -3,9 +3,8 @@ title: "drasyl 0.5.0 released with E2E Encryption, LAN Discovery, and TCP Fallba
 date: 2021-06-28T23:39:00+01:00
 tags: ["releases"]
 images: ["img/pexels-life-of-pix-4291.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Brass Color Metal Padlock With Chain](/img/pexels-life-of-pix-4291.jpg)
 
 Today, we are excited to announce the release of drasyl 0.5.0 with end-to-end encryption, an IP multicast-based peer discovery, and TCP-fallback if UDP is blocked.
 

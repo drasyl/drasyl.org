@@ -1,31 +1,45 @@
-<section id="about" class="about">
-  <div class="container" data-aos="fade-up">
-    <div class="section-title">
-      <h2>About drasyl</h2>
-    </div>
-    <div class="row content">
-      <div class="col-lg-6">
+<!-- About Section -->
+<section id="about" class="about section">
+
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>About drasyl</h2>
+  </div><!-- End Section Title -->
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Left Column -->
+      <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
         <p>
-          drasyl ([dʁazy:l]) is a lightweight, software-defined overlay networking solution built on a <a href="https://github.com/drasyl/drasyl-rs/tree/master/drasyl-p2p">fast and secure peer-to-peer protocol</a>.
+          drasyl is a lightweight software-defined overlay networking solution that securely links your devices across any existing networks.
+          It creates direct encrypted connections between devices, forming a high-performance mesh overlay that automatically adapts to available network paths and works seamlessly through barriers such as routers or firewalls.
         </p>
-        <p>
-          It enables you to seamlessly interconnect all your devices in your organization, team, or home, regardless of the network barriers commonly present between physical networks. Unlike traditional VPNs, drasyl builds direct peer-to-peer connections between all devices, creating a mesh overlay that efficiently utilizes the underlying physical network.
-        </p>
-        <p>
-          No proprietary, centralized network controller is required, as overlay configurations can be distributed using any standard HTTP server or fully decentralized with local copies on each device. You retain full control over network membership and which devices are permitted to communicate, following a zero-trust model with all traffic end-to-end encrypted and all devices authenticated.
-        </p>
-        <a href="https://docs.drasyl.org/" class="btn-learn-more">Learn More</a>
-      </div>
-      <div class="col-lg-6 pt-4 pt-lg-0">
         <ul>
-          <li><i class="bi bi-check2-all"></i> Access your personal devices from anywhere.</li>
-          <li><i class="bi bi-check2-all"></i> Access restricted organizational resources from home.</li>
-          <li><i class="bi bi-check2-all"></i> Link distributed teams or sites.</li>
-          <li><i class="bi bi-check2-all"></i> Create ad-hoc secure networks between peers.</li>
-          <li><i class="bi bi-check2-all"></i> Zero-trust model with end-to-end encryption.</li>
-          <li><i class="bi bi-check2-all"></i> Open-source, easy to use, and runs on many platforms.</li>
+          <li><i class="bi bi-check2-circle"></i> <span>Programmable networking with customizable routing and topology.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Mesh overlay that forms direct connections between devices.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Zero-trust network access with end-to-end encryption.</span></li>
         </ul>
       </div>
+
+      <!-- Right Column -->
+      <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+        <p>
+          No proprietary centralized network controller is required.
+          The network configuration is stored in a simple text-based file that can be shared via a standard web server or through local file copies for a fully decentralized setup.
+          With zero trust security, end-to-end encryption and fine-grained access control, you remain in complete control of your network.
+        </p>
+        <ul>
+          <li><i class="bi bi-check2-circle"></i> <span>Automatic deployment and operation across any network.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Both centralized or decentralized management possible.</span></li>
+          <li><i class="bi bi-check2-circle"></i> <span>Free, open-source and completely self-hostable.</span></li>
+        </ul>
+        <a href="https://docs.drasyl.org/" class="read-more">
+          <span>Read More</span><i class="bi bi-arrow-right"></i>
+        </a>
+      </div>
+
     </div>
   </div>
-</section>
+
+</section><!-- /About Section -->

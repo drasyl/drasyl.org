@@ -3,9 +3,8 @@ title: "DrasylNode as Shared Library"
 date: 2022-09-21T18:18:00+02:00
 tags: ["native", "C", "library"]
 images: ["img/alfons-morales-YLSwjSy7stw-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![A library.](/img/alfons-morales-YLSwjSy7stw-unsplash.jpg)
 
 We are excited to announce our blazing fast and native version of DrasylNode as a shared C library. This was achieved by translating Java code with the required JDK runtime elements into native code using the [GraalVM](#about-native-image).
 <!--more-->

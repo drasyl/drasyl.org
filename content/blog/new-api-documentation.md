@@ -2,9 +2,8 @@
 title: "New Javadoc Website"
 date: 2021-10-12T00:32:00+01:00
 images: ["img/pexels-thisisengineering-3861943.jpg"]
+author: "Kevin Röbert"
 ---
-
-![Woman Writing on Whiteboard](/img/pexels-thisisengineering-3861943.jpg)
 
 To date, we have always referred to javadoc.io, when someone has asked us for a Javadoc of drasyl.
 While javadoc.io is an excellent service, we ran into some limitations:

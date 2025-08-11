@@ -1,6 +1,7 @@
 ---
 title: "drasyl Discord Server"
 date: 2022-04-01T18:39:00+01:00
+author: "Kevin Röbert"
 ---
 
 We want to let you know that there is now a drasyl Discord Channel!

@@ -3,9 +3,8 @@ title: "drasyl 0.6.0 released with Support for Netty Handlers, Backpressure Mech
 date: 2021-11-28T01:57:00+01:00
 tags: ["releases", "cli"]
 images: ["img/pexels-pixabay-210008.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![Grayscale photograph of an empty tunnel](/img/pexels-pixabay-210008.jpg)
 
 Today, we are excited to announce the release of drasyl 0.6.0 with support for [Netty](https://netty.io) channel handlers, backpressure mechanism, option to disable data plane encryption, file transfer for wormhole utility, and port tunneling utility.
 

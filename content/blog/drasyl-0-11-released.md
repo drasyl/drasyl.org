@@ -3,9 +3,8 @@ title: "drasyl 0.11.0 released with performance improvements, fixes, and dynamic
 date: 2025-01-04T19:21:56+01:00
 tags: ["releases"]
 images: ["img/anton-filatov-O_5SJuSOxZA-unsplash.jpg"]
+author: "Heiko Bornholdt"
 ---
-
-![](/img/anton-filatov-O_5SJuSOxZA-unsplash.jpg)
 
 Today, we are excited to announce the release of drasyl 0.11.0.
 This maintenance release brings performance improvements, fixes and the new CLI sub-command `sdon` for the creation of dynamic overlays.

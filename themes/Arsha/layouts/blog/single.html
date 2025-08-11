@@ -1,62 +1,182 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
 	{{ partial "head.html" . }}
-	<body class="single single-{{ .Type | singularize }}">
+	<body class="blog-details-page single single-{{ .Type | singularize }}">
 		{{ partial "header.html" . }}
-		<main id="main">
-			<section id="breadcrumbs" class="breadcrumbs">
+		<main class="main">
+
+			<!-- Page Title -->
+			<div class="page-title" data-aos="fade">
 				<div class="container">
-					<div class="row">
-						<div class="col-xl-8 col-lg-12">
-							<ol>
-								<li><a href="{{ .Site.BaseURL }}">Home</a></li>
-								{{ if .Section }}<li><a href="{{ .Site.BaseURL }}{{ .Section }}">{{ .Section | humanize }}</a></li>{{ end }}
-								<li></li>
-							</ol>
-							<h2>{{ .Title }}</h2>
-							<div>
-								On <time>{{ .Date | time.Format ":date_long" }}</time>
-								{{ range $index, $value := .Params.tags }}{{ if ne $index 0 }},{{else}} in{{ end }} <a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}">{{ .| humanize | title }}</a>{{ end }}
-								 · 
-								{{ if gt .ReadingTime 1 }}
-								    {{ .ReadingTime }} min read
-								{{ else }}
-								    One min read
+					<nav class="breadcrumbs">
+						<ol>
+							<li><a href="{{ .Site.BaseURL }}">Home</a></li>
+							<li><a href="{{ .Site.BaseURL }}blog/">Blog</a></li>
+							<li class="current">{{ .Title }}</li>
+						</ol>
+					</nav>
+					<h1>{{ .Title }}</h1>
+				</div>
+			</div><!-- End Page Title -->
+
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-8">
+
+						<!-- Blog Details Section -->
+						<section id="blog-details" class="blog-details section">
+							<div class="container" data-aos="fade-up">
+
+								<article class="article">
+
+									{{ if .Params.images }}
+									<div class="hero-img" data-aos="zoom-in">
+										<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="img-fluid" loading="lazy">
+										<div class="meta-overlay">
+											<div class="meta-categories">
+												<span class="reading-time"><i class="bi bi-clock"></i> {{ .ReadingTime }} min read</span>
+											</div>
+										</div>
+									</div>
+									{{ end }}
+
+									<div class="article-content" data-aos="fade-up" data-aos-delay="100">
+										<div class="content-header">
+											<h1 class="title">{{ .Title }}</h1>
+
+											<div class="author-info">
+												{{ if .Params.author }}
+												<div class="author-details">
+													{{ if eq .Params.author "Heiko Bornholdt" }}
+													<img src="{{ "img/team/hb.jpg" | relURL }}" alt="{{ .Params.author }}" class="author-img">
+													{{ else if eq .Params.author "Kevin Röbert" }}
+													<img src="{{ "img/team/kr.webp" | relURL }}" alt="{{ .Params.author }}" class="author-img">
+													{{ end }}
+													<div class="info">
+														<h4>{{ .Params.author }}</h4>
+														{{ if eq .Params.author "Heiko Bornholdt" }}
+														<span class="role">Senior Research Assistant</span>
+														{{ else if eq .Params.author "Kevin Röbert" }}
+														<span class="role">Research Assistant</span>
+														{{ else if .Params.author_role }}
+														<span class="role">{{ .Params.author_role }}</span>
+														{{ else }}
+														<span class="role">Author</span>
+														{{ end }}
+													</div>
+												</div>
+												{{ end }}
+												<div class="post-meta">
+													<span class="date"><i class="bi bi-calendar3"></i> {{ .Date.Format "Jan 2, 2006" }}</span>
+													{{ if .Params.tags }}
+													<span class="divider">•</span>
+													<span class="tags"><i class="bi bi-tags"></i> 
+														{{ range $index, $tag := .Params.tags }}
+														{{ if gt $index 0 }}, {{ end }}
+														<a href="{{ "tags/" | relURL }}{{ $tag | urlize }}">{{ $tag }}</a>
+														{{ end }}
+													</span>
+													{{ end }}
+												</div>
+											</div>
+										</div>
+
+										<div class="content">
+											{{ .Content }}
+										</div>
+
+										<div class="meta-bottom">
+											<!-- {{ if .Params.tags }}
+											<div class="tags-section">
+												<h4>Related Topics</h4>
+												<div class="tags">
+													{{ range .Params.tags }}
+													<a href="{{ "tags/" | relURL }}{{ . | urlize }}" class="tag">{{ . }}</a>
+													{{ end }}
+												</div>
+											</div>
+											{{ end }} -->
+
+											<div class="share-section">
+												<h4>Share Article</h4>
+												<div class="social-links">
+													<a href="https://x.com/intent/tweet?text={{ .Title }}&url={{ .Permalink }}" class="twitter" target="_blank" rel="noopener"><i class="bi bi-twitter-x"></i></a>
+													<a href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}" class="facebook" target="_blank" rel="noopener"><i class="bi bi-facebook"></i></a>
+													<a href="https://www.linkedin.com/sharing/share-offsite/?url={{ .Permalink }}" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+													<a href="https://mastodon.social/share?text={{ .Title }}%20{{ .Permalink }}" class="mastodon" target="_blank" rel="noopener"><i class="bi bi-mastodon"></i></a>
+												</div>
+											</div>
+										</div>
+									</div>
+
+								</article>
+
+							</div>
+						</section><!-- /Blog Details Section -->
+
+					</div>
+
+					<div class="col-lg-4 sidebar">
+
+						<div class="widgets-container" data-aos="fade-up" data-aos-delay="200">
+
+							<!-- Recent Posts Widget -->
+							<div class="recent-posts-widget widget-item">
+
+								<h3 class="widget-title">Recent Posts</h3>
+
+								{{ range first 5 (where .Site.RegularPages "Type" "blog") }}
+								<div class="post-item">
+									{{ if .Params.images }}
+									<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="flex-shrink-0">
+									{{ end }}
+									<div>
+										<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+										<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+									</div>
+								</div><!-- End recent post item-->
 								{{ end }}
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			<section class="inner-page">
-				<div class="container">
-					<div class="row">
-						<div class="col-xl-8 col-lg-12">
-							<div>
-								{{ .Content }}
-							</div>
-							<div style="text-align: center; padding-top: 40px;">
-								<a href="{{ .Site.BaseURL }}{{ .Section }}">← Back to index</a>
-							</div>
-						</div>
-						{{ $related := .Site.RegularPages.Related . | first 5 }}
-						{{ if $related }}
-							<div class="col-xl-1"></div>
-							<div class="col-xl-3 col-lg-12">
-								<h4>Related Posts</h4>
-						        <ul class="list-group list-group-flush">
-						        	{{ range $related }}
-						        		<li class="list-group-item">
-						        			<a href="{{ .Permalink }}">{{ .Title }}</a>
-						        		</li>
-						        	{{ end }}
+
+							</div><!--/Recent Posts Widget -->
+
+							<!-- Tags Widget -->
+							<div class="tags-widget widget-item">
+
+								<h3 class="widget-title">Tags</h3>
+								<ul>
+									{{ range .Site.Taxonomies.tags }}
+									<li><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></li>
+									{{ end }}
 								</ul>
-							</div>
-						{{ end }}
+
+							</div><!--/Tags Widget -->
+
+						</div>
+
 					</div>
+
 				</div>
-			</section>
+			</div>
+
 		</main>
 		{{ partial "footer.html" . }}
+
+		<!-- Scroll Top -->
+		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+		<!-- Vendor JS Files -->
+		<script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
+		<!--  <script src="assets/vendor/php-email-form/validate.js"></script>-->
+		<script src="{{ "vendor/aos/aos.js" | relURL }}"></script>
+		<!--  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
+		<!--  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+		<!--  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
+		<!--  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
+		<!--  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
+
+		<!-- Main JS File -->
+		{{ $script := resources.Get "js/main.js" }}
+		<script src="{{ ($script | minify | fingerprint).RelPermalink}}"></script>
 	</body>
 </html>

@@ -2,9 +2,8 @@
 title: "drasyl available on GitHub now!"
 date: 2020-07-13T18:43:21Z
 images: ["img/roman-synkevych-wX2L8L-fGeA-unsplash.jpg"]
+author: "Kevin Röbert"
 ---
-
-![A figurine of an oktokat in the center, in the background a laptop with the main page of the GitHub open.](/img/roman-synkevych-wX2L8L-fGeA-unsplash.jpg)
 
 drasyl is now also available on [GitHub](https://github.com/drasyl/drasyl).
 We will release all future drasyl versions on that page.
