@@ -1,9 +1,9 @@
-# Website drasyl.org
+# Website netsody.io
 
 ## Create new blog post
 
 ````bash
-hugo new blog/drasyl-1-2-released.md
+hugo new blog/netsody-1-2-released.md
 ````
 
 ## Start development server
