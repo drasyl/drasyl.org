@@ -1,6 +1,6 @@
-baseURL = 'https://drasyl.org/'
+baseURL = 'https://netsody.io/'
 languageCode = 'en-us'
-title = 'drasyl provides secure, software-defined overlay networks, connecting all your devices'
+title = 'Netsody provides secure, software-defined overlay networks, connecting all your devices'
 theme = 'Arsha'
 disableKinds = ['taxonomyTerm']
 pluralizeListTitles = false
@@ -9,4 +9,4 @@ pluralizeListTitles = false
 unsafe = true
 
 [params]
-  images = ['img/drasyl-og.png']
+  images = ['img/Netsody-og.png']

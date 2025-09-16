@@ -34,7 +34,7 @@ jobs:
       - name: Copy to Server
         uses: burnett01/rsync-deployments@7.1.0
         with:
-          switches: -avzr --delete
+          switches: -avzrc --delete
           path: ./public/
           remote_path: ./html/
           remote_host: ${{ secrets.DEPLOY_HOST }}
