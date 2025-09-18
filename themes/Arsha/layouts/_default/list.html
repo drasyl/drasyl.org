@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-	{{ partial "head.html" . }}
+	{{ partialCached "head.html" . }}
 	<body class="blog-page list list-{{ .Type | singularize }}">
-		{{ partial "header.html" . }}
+		{{ partialCached "header.html" . }}
 		<main class="main">
 
 			<!-- Page Title -->
@@ -37,16 +37,79 @@
 
 							<div class="container" data-aos="fade-up" data-aos-delay="100">
 
+								{{/* Build paginator over this list's pages */}}
+								{{ $pages := sort .Pages "Date" "desc" }}
+								{{ $paginator := .Paginate $pages }}
+
 								<div class="row gy-4">
 
-									{{ range .Pages }}
+									{{ range $paginator.Pages }}
 									<div class="col-lg-6">
 										<article>
 
+											{{/* Optimized post image */}}
+											{{ $post := . }}
+											{{ $imgParam := "" }}
 											{{ if .Params.images }}
-											<div class="post-img">
-												<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="img-fluid">
-											</div>
+											  {{ $imgParam = (index .Params.images 0) }}
+											{{ else if .Params.image }}
+											  {{ $imgParam = .Params.image }}
+											{{ end }}
+											{{ if $imgParam }}
+											  {{ $img := false }}
+											  {{ with $imgParam }}
+												{{ with $post.Resources.GetMatch (printf "**%s" (path.Base .)) }}
+												  {{ $img = . }}
+												{{ end }}
+											  {{ end }}
+											  {{ if (not $img) }}
+												{{ with $imgParam }}
+												  {{ $clean := strings.TrimPrefix "/" . }}
+												  {{ $clean = (strings.TrimPrefix "assets/" $clean) }}
+												  {{ with resources.Get $clean }}
+													{{ $img = . }}
+												  {{ end }}
+												{{ end }}
+											  {{ end }}
+
+											  <div class="post-img">
+												{{ if $img }}
+												  {{/* Generate responsive variants */}}
+												  {{ $avif800 := $img.Resize "800x q70 avif" }}
+												  {{ $avif1200 := $img.Resize "1200x q70 avif" }}
+												  {{ $webp800 := $img.Resize "800x q75 webp" }}
+												  {{ $webp1200 := $img.Resize "1200x q75 webp" }}
+												  {{ $jpg1200 := $img.Resize "1200x q80" }}
+												  <picture>
+													<source type="image/avif" srcset="{{ $avif800.RelPermalink }} 800w, {{ $avif1200.RelPermalink }} 1200w" sizes="(min-width: 1200px) 50vw, 100vw">
+													<source type="image/webp" srcset="{{ $webp800.RelPermalink }} 800w, {{ $webp1200.RelPermalink }} 1200w" sizes="(min-width: 1200px) 50vw, 100vw">
+													<img src="{{ $jpg1200.RelPermalink }}" alt="{{ .Title }}" class="img-fluid" width="{{ $jpg1200.Width }}" height="{{ $jpg1200.Height }}" loading="lazy" decoding="async" fetchpriority="low">
+												  </picture>
+												{{ else }}
+												  {{/* Static fallback */}}
+												  {{ $clean := strings.TrimPrefix "/" $imgParam }}
+												  {{ $abs := printf "static/%s" $clean }}
+												  {{ $cfg := false }}
+												  {{ if (fileExists $abs) }}
+													{{ $cfg = (imageConfig $abs) }}
+												  {{ end }}
+												  {{ $webpRel := replaceRE "\\.[^./]+$" ".webp" $clean }}
+												  {{ $webpAbs := printf "static/%s" $webpRel }}
+												  {{ $hasWebp := fileExists $webpAbs }}
+												  {{ $avifRel := replaceRE "\\.[^./]+$" ".avif" $clean }}
+												  {{ $avifAbs := printf "static/%s" $avifRel }}
+												  {{ $hasAvif := fileExists $avifAbs }}
+												  <picture>
+													{{ if $hasAvif }}
+													  <source type="image/avif" srcset="/{{ $avifRel }}" sizes="(min-width: 1200px) 50vw, 100vw">
+													{{ end }}
+													{{ if $hasWebp }}
+													  <source type="image/webp" srcset="/{{ $webpRel }}" sizes="(min-width: 1200px) 50vw, 100vw">
+													{{ end }}
+													<img src="/{{ $clean }}" alt="{{ .Title }}" class="img-fluid" {{ with $cfg }}width="{{ .Width }}" height="{{ .Height }}"{{ end }} loading="lazy" decoding="async" fetchpriority="low">
+												  </picture>
+												{{ end }}
+											  </div>
 											{{ end }}
 
 											<h2 class="title">
@@ -86,11 +149,11 @@
 						</section><!-- /Blog Posts Section -->
 
 						<!-- Pagination Section -->
-						{{ if gt (len .Pages) 0 }}
+						{{ if .Paginator }}
 						<section id="pagination" class="pagination-2 section">
 							<div class="container">
 								<div class="d-flex justify-content-center">
-									{{ template "_internal/pagination.html" . }}
+								{{ template "_internal/pagination.html" . }}
 								</div>
 							</div>
 						</section><!-- /Pagination Section -->
@@ -109,8 +172,44 @@
 
 								{{ range first 5 (where .Site.RegularPages "Type" "blog") }}
 								<div class="post-item">
+									{{/* square 80x80 thumbnail */}}
+									{{ $p := . }}
+									{{ $thumbParam := "" }}
 									{{ if .Params.images }}
-									<img src="{{ index .Params.images 0 | relURL }}" alt="{{ .Title }}" class="flex-shrink-0">
+									  {{ $thumbParam = (index .Params.images 0) }}
+									{{ else if .Params.image }}
+									  {{ $thumbParam = .Params.image }}
+									{{ end }}
+									{{ $thumb := false }}
+									{{ with $thumbParam }}
+									  {{ with $p.Resources.GetMatch (printf "**%s" (path.Base .)) }}
+										{{ $thumb = . }}
+									  {{ end }}
+									{{ end }}
+									{{ if (not $thumb) }}
+									  {{ with $thumbParam }}
+										{{ $clean := strings.TrimPrefix "/" . }}
+										{{ $clean = (strings.TrimPrefix "assets/" $clean) }}
+										{{ with resources.Get $clean }}
+										  {{ $thumb = . }}
+										{{ end }}
+									  {{ end }}
+									{{ end }}
+									{{ if $thumb }}
+									  {{ $twebp := $thumb.Fill "160x160 q100 webp" }}
+									  {{ $tjpg := $thumb.Fill "160x160 q100" }}
+									  <picture>
+										<source type="image/webp" srcset="{{ $twebp.RelPermalink }}">
+										<img src="{{ $tjpg.RelPermalink }}" alt="{{ .Title }}" class="flex-shrink-0" width="80" height="80" loading="lazy" decoding="async" fetchpriority="low" style="aspect-ratio:1/1; object-fit:cover;">
+									  </picture>
+									{{ else if $thumbParam }}
+									  {{ $clean := strings.TrimPrefix "/" $thumbParam }}
+									  {{ $abs := printf "static/%s" $clean }}
+									  {{ $cfg := false }}
+									  {{ if (fileExists $abs) }}
+										{{ $cfg = (imageConfig $abs) }}
+									  {{ end }}
+									  <img src="/{{ $clean }}" alt="{{ .Title }}" class="flex-shrink-0" width="80" height="80" loading="lazy" decoding="async" fetchpriority="low" style="aspect-ratio:1/1; object-fit:cover;">
 									{{ end }}
 									<div>
 										<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
@@ -141,20 +240,14 @@
 			</div>
 
 		</main>
-		{{ partial "footer.html" . }}
+		{{ partialCached "footer.html" . }}
 
 		<!-- Scroll Top -->
 		<a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 		<!-- Vendor JS Files -->
 		<script src="{{ "vendor/bootstrap/js/bootstrap.bundle.min.js" | relURL }}"></script>
-		<!--  <script src="assets/vendor/php-email-form/validate.js"></script>-->
 		<script src="{{ "vendor/aos/aos.js" | relURL }}"></script>
-		<!--  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>-->
-		<!--  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
-		<!--  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>-->
-		<!--  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>-->
-		<!--  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>-->
 
 		<!-- Main JS File -->
 		{{ $script := resources.Get "js/main.js" }}
