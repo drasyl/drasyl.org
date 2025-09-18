@@ -227,8 +227,8 @@
 									  {{ end }}
 									{{ end }}
 									{{ if $thumb }}
-									  {{ $twebp := $thumb.Fill "80x80 q75 webp" }}
-									  {{ $tjpg := $thumb.Fill "80x80 q80" }}
+									  {{ $twebp := $thumb.Fill "160x160 q100 webp" }}
+									  {{ $tjpg := $thumb.Fill "160x160 q100" }}
 									  <picture>
 									    <source type="image/webp" srcset="{{ $twebp.RelPermalink }}">
 									    <img src="{{ $tjpg.RelPermalink }}" alt="{{ .Title }}" class="flex-shrink-0" width="80" height="80" loading="lazy" decoding="async" fetchpriority="low" style="aspect-ratio:1/1; object-fit:cover;">

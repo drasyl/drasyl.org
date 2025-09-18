@@ -1,5 +1,15 @@
 /node_modules
 /public
 /resources
-*.DS_Store
+.DS_Store
 /.idea
+
+### Hugo ###
+# Generated files by hugo
+/public/
+/resources/_gen/
+/assets/jsconfig.json
+hugo_stats.json
+
+# Temporary lock file while building
+/.hugo_build.lock

@@ -64,7 +64,6 @@
                       fetchpriority="{{ $fetchPriority }}">
                   </picture>
                 {{ else }}
-                HI
                   {{/* Fallback: external URL or param that is not a Page Resource */}}
                   {{ if .Params.images }}
                     <img src="/{{ index .Params.images 0 }}" class="img-fluid" alt="{{ .Title }}" loading="{{ if $isFirst }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ $fetchPriority }}">
