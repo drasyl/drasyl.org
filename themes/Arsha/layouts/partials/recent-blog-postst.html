@@ -16,13 +16,73 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="{{ mul (add $index 1) 100 }}">
 
               <div class="post-img position-relative overflow-hidden">
+                {{/* Determine priority: only the first card gets high priority */}}
+                {{ $isFirst := eq $index 0 }}
+                {{ $fetchPriority := cond $isFirst "high" "low" }}
+
+                {{/* Try to resolve an image parameter (either params.images[0] or params.image) */}}
+                {{ $imgParam := "" }}
                 {{ if .Params.images }}
-                <img src="/{{ index .Params.images 0 }}" class="img-fluid" alt="{{ .Title }}">
+                  {{ $imgParam = (index .Params.images 0) }}
                 {{ else if .Params.image }}
-                <img src="{{ .Params.image }}" class="img-fluid" alt="{{ .Title }}">
-                {{ else }}
-                <img src="/img/pexels-thisisengineering-3861943.jpg" class="img-fluid" alt="{{ .Title }}">
+                  {{ $imgParam = .Params.image }}
                 {{ end }}
+
+                {{/* Attempt to get a Page Resource based on the provided param. If not found, fall back later. */}}
+                {{ $img := false }}
+                {{ with $imgParam }}
+                  {{/* try by basename first (works with bundled images) */}}
+                  {{ with $post.Resources.GetMatch (printf "**%s" (path.Base .)) }}
+                    {{ $img = . }}
+                  {{ end }}
+                {{ end }}
+
+                {{ if $img }}
+                  {{/* Generate responsive variants (AVIF/WebP/JPG) */}}
+                  {{ $avif480 := $img.Resize "480x q70 avif" }}
+                  {{ $avif960 := $img.Resize "960x q70 avif" }}
+                  {{ $avif1600 := $img.Resize "1600x q70 avif" }}
+
+                  {{ $webp480 := $img.Resize "480x q75 webp" }}
+                  {{ $webp960 := $img.Resize "960x q75 webp" }}
+                  {{ $webp1600 := $img.Resize "1600x q75 webp" }}
+
+                  {{ $jpg1600 := $img.Resize "1600x q80" }}
+
+                  <picture>
+                    <source type="image/avif" srcset="{{ $avif480.RelPermalink }} 480w, {{ $avif960.RelPermalink }} 960w, {{ $avif1600.RelPermalink }} 1600w" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                    <source type="image/webp" srcset="{{ $webp480.RelPermalink }} 480w, {{ $webp960.RelPermalink }} 960w, {{ $webp1600.RelPermalink }} 1600w" sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw">
+                    <img
+                      class="img-fluid"
+                      src="{{ $jpg1600.RelPermalink }}"
+                      srcset="{{ $jpg1600.RelPermalink }} 1600w"
+                      sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+                      alt="{{ .Title }}"
+                      width="{{ $jpg1600.Width }}" height="{{ $jpg1600.Height }}"
+                      loading="{{ if $isFirst }}eager{{ else }}lazy{{ end }}"
+                      decoding="async"
+                      fetchpriority="{{ $fetchPriority }}">
+                  </picture>
+                {{ else }}
+                HI
+                  {{/* Fallback: external URL or param that is not a Page Resource */}}
+                  {{ if .Params.images }}
+                    <img src="/{{ index .Params.images 0 }}" class="img-fluid" alt="{{ .Title }}" loading="{{ if $isFirst }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ $fetchPriority }}">
+                  {{ else if .Params.image }}
+                    <img src="{{ .Params.image }}" class="img-fluid" alt="{{ .Title }}" loading="{{ if $isFirst }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ $fetchPriority }}">
+                  {{ else }}
+                    {{/* Last-resort static fallback */}}
+                    {{ $fallback := resources.Get "img/pexels-thisisengineering-3861943.jpg" }}
+                    {{ $fwebp := $fallback.Resize "1600x q75 webp" }}
+                    {{ $favif := $fallback.Resize "1600x q70 avif" }}
+                    <picture>
+                      <source type="image/avif" srcset="{{ $favif.RelPermalink }} 1600w" sizes="100vw">
+                      <source type="image/webp" srcset="{{ $fwebp.RelPermalink }} 1600w" sizes="100vw">
+                      <img src="{{ ($fallback.Resize "1600x q80").RelPermalink }}" class="img-fluid" alt="{{ .Title }}" loading="{{ if $isFirst }}eager{{ else }}lazy{{ end }}" decoding="async" fetchpriority="{{ $fetchPriority }}">
+                    </picture>
+                  {{ end }}
+                {{ end }}
+
                 <span class="post-date">{{ .Date.Format "January 2" }}</span>
               </div>
 

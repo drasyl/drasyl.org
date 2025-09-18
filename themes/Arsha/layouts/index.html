@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.LanguageCode }}">
-  {{ partial "head.html" . }}
+  {{ partialCached "head.html" . }}
   <body class="index-page">
   <div id="particles-js" class="dark-background"></div>
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
     <main class="main">
       {{ partial "hero.html" . }}
       {{ partial "about.html" . }}
@@ -15,7 +15,7 @@
       {{ partial "recent-blog-postst.html" . }}
     </main>
 
-    {{ partial "footer.html" . }}
+    {{ partialCached "footer.html" . }}
 
     <!-- Scroll Top -->
     <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

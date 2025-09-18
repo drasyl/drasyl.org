@@ -2,7 +2,7 @@
 title: "Simplifying Distributed Application Deployment at the Edge through Software-Defined Overlay Networks"
 date: 2025-09-01T00:00:00
 tags: ["publication", "research","use case"]
-images: ["img/annie-spratt-_dAnK9GJvdY-unsplash_o.webp"]
+images: ["annie-spratt-_dAnK9GJvdY-unsplash_o.webp"]
 author: "Kevin Röbert"
 ---
 
